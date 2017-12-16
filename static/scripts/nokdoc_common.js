@@ -29,7 +29,7 @@
       if (term) {
         $context.mark(term, {
           "separateWordSearch": false,
-          "wildcards": "enabled",
+          "wildcards": "withSpaces",
           done: function() {
             $context.not(":has(mark)").hide();
           }

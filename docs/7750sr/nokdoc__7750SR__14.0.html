@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>7750SR</code>
                   release <code>14.0</code>
-                  <small>generated on 2017/11/30</small></h3></div>
+                  <small>generated on 2017/12/16</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -421,6 +434,15 @@
                   </tr>
                   <tr>
                     <td>37</td>
+                    <td>7450 ESS, 7750 SR, and 7950 XRS R14.0.R6 Infocenter</td>
+                    <td>7750SR140R4 </td>
+                    <td>2 / Nov 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/7750SR140R4/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Router Configuration Guide R14.0.R1</td>
                     <td>3HE 10794 AAAA TQZZA 01 </td>
                     <td>1 / Mar 11, 2016</td>
@@ -430,7 +452,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>38</td>
+                    <td>39</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Router Configuration Guide R14.0.R4</td>
                     <td>3HE 10794 AAAB TQZZA 01 </td>
                     <td>1 / Jul 29, 2016</td>
@@ -440,7 +462,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>39</td>
+                    <td>40</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Services Overview Guide R14.0.R1</td>
                     <td>3HE 10796 AAAA TQZZA 01 </td>
                     <td>1 / Mar 11, 2016</td>
@@ -450,7 +472,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>40</td>
+                    <td>41</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Services Overview Guide R14.0.R4</td>
                     <td>3HE 10796 AAAB TQZZA 01 </td>
                     <td>1 / Jul 29, 2016</td>
@@ -460,7 +482,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>41</td>
+                    <td>42</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS System Management Guide R14.0.R1</td>
                     <td>3HE 10797 AAAA TQZZA 01 </td>
                     <td>1 / Mar 11, 2016</td>
@@ -470,7 +492,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>42</td>
+                    <td>43</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS System Management Guide R14.0.R4</td>
                     <td>3HE 10797 AAAB TQZZA 01 </td>
                     <td>1 / Jul 29, 2016</td>
@@ -480,7 +502,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>43</td>
+                    <td>44</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Unicast Routing Protocols Guide R14.0.R1</td>
                     <td>3HE 10799 AAAA TQZZA 01 </td>
                     <td>1 / Mar 11, 2016</td>
@@ -489,7 +511,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>44</td>
+                    <td>45</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Unicast Routing Protocols Guide R14.0.R4</td>
                     <td>3HE 10799 AAAB TQZZA 01 </td>
                     <td>1 / Jul 29, 2016</td>
@@ -499,7 +521,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>45</td>
+                    <td>46</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Zipped Collection R14.0.R1</td>
                     <td>3HE 10800 AAAA TQZZA 01 </td>
                     <td>4 / Nov 18, 2016</td>
@@ -508,7 +530,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>46</td>
+                    <td>47</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Zipped Collection R14.0.R4</td>
                     <td>3HE 10800 AAAB TQZZA 01 </td>
                     <td>5 / Apr 21, 2017</td>
@@ -517,7 +539,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>47</td>
+                    <td>48</td>
                     <td>7450 ESS-12 and 7750 SR-12 Chassis Installation Guide</td>
                     <td>3HE 10927 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 4, 2016</td>
@@ -526,7 +548,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>48</td>
+                    <td>49</td>
                     <td>7450 ESS-12 and 7750 SR-12 Chassis Installation Guide</td>
                     <td>3HE 10927 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Feb 22, 2017</td>
@@ -535,7 +557,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>49</td>
+                    <td>50</td>
                     <td>7450 ESS-12 and 7750 SR-12 Chassis Installation Guide</td>
                     <td>3HE 10927 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jan 4, 2017</td>
@@ -544,7 +566,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>50</td>
+                    <td>51</td>
                     <td>7450 ESS-7 and 7750 SR-7 Chassis Installation Guide</td>
                     <td>3HE 10926 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Mar 20, 2017</td>
@@ -553,7 +575,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>51</td>
+                    <td>52</td>
                     <td>7450 ESS-7 and 7750 SR-7 Chassis Installation Guide</td>
                     <td>3HE 10926 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jan 4, 2017</td>
@@ -562,7 +584,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>52</td>
+                    <td>53</td>
                     <td>7450 ESS-7 and 7750 SR-7 Chassis Installation Guide</td>
                     <td>3HE 10926 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 4, 2016</td>
@@ -571,7 +593,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>53</td>
+                    <td>54</td>
                     <td>7450ESS and 7750SR MDAe Installation Guide</td>
                     <td>3HE 10931 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Mar 27, 2017</td>
@@ -580,7 +602,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>54</td>
+                    <td>55</td>
                     <td>7750 SR Gx AVPs Reference Guide R14.0.R1</td>
                     <td>3HE 10787 AAAA TQZZA 01 </td>
                     <td>1 / Mar 11, 2016</td>
@@ -590,7 +612,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>55</td>
+                    <td>56</td>
                     <td>7750 SR Gx AVPs Reference Guide R14.0.R4</td>
                     <td>3HE 10787 AAAB TQZZA 01 </td>
                     <td>1 / Jul 29, 2016</td>
@@ -600,7 +622,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>56</td>
+                    <td>57</td>
                     <td>7750 SR RADIUS Attributes Reference Guide R14.0.R1</td>
                     <td>3HE 10793 AAAA TQZZA 01 </td>
                     <td>1 / Mar 11, 2016</td>
@@ -610,7 +632,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>57</td>
+                    <td>58</td>
                     <td>7750 SR RADIUS Attributes Reference Guide R14.0.R4</td>
                     <td>3HE 10793 AAAB TQZZA 01 </td>
                     <td>1 / Jul 29, 2016</td>
@@ -620,7 +642,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>58</td>
+                    <td>59</td>
                     <td>7750 SR-12e Chassis Installation Guide</td>
                     <td>3HE 09928 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 4, 2016</td>
@@ -629,7 +651,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>59</td>
+                    <td>60</td>
                     <td>7750 SR-12e Chassis Installation Guide</td>
                     <td>3HE 10928 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 4, 2016</td>
@@ -638,7 +660,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>60</td>
+                    <td>61</td>
                     <td>7750 SR-12e Chassis Installation Guide</td>
                     <td>3HE 10928 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Feb 22, 2017</td>
@@ -647,7 +669,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>61</td>
+                    <td>62</td>
                     <td>7750 SR-1e, SR-2e, and SR-3e Chassis Installation Guide</td>
                     <td>3HE 10738 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / May 4, 2016</td>
@@ -656,7 +678,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>62</td>
+                    <td>63</td>
                     <td>7750 SR-1e, SR-2e, and SR-3e Chassis Installation Guide</td>
                     <td>3HE 10738 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jun 28, 2016</td>
@@ -665,7 +687,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>63</td>
+                    <td>64</td>
                     <td>7750 SR-1e, SR-2e, and SR-3e Chassis Installation Guide</td>
                     <td>3HE 10738 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Feb 22, 2017</td>
@@ -674,7 +696,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>64</td>
+                    <td>65</td>
                     <td>7750 SR-1e, SR-2e, and SR-3e Chassis Installation Guide</td>
                     <td>3HE 10738 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 4, 2016</td>
@@ -683,7 +705,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>65</td>
+                    <td>66</td>
                     <td>7750 SR-a4 and 7750 SR-a8 Chassis Installation Guide</td>
                     <td>3HE 10929 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Aug 23, 2016</td>
@@ -692,7 +714,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>66</td>
+                    <td>67</td>
                     <td>7750 SR-a4 and 7750 SR-a8 Chassis Installation Guide</td>
                     <td>3HE 10929 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 4, 2016</td>
@@ -701,7 +723,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>67</td>
+                    <td>68</td>
                     <td>7750 SR-a4 and 7750 SR-a8 Chassis Installation Guide</td>
                     <td>3HE 10929 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Feb 22, 2017</td>
@@ -710,7 +732,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>68</td>
+                    <td>69</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 13.0.R7 - Part I</td>
                     <td>3HE 10564 AAAB TQZZA 01 </td>
                     <td>1 / Apr 8, 2016</td>
@@ -719,7 +741,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>69</td>
+                    <td>70</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 13.0.R7 - Part II</td>
                     <td>3HE 10565 AAAB TQZZA 01 </td>
                     <td>1 / Apr 8, 2016</td>
@@ -728,7 +750,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>70</td>
+                    <td>71</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 14.0.R5 - Part I</td>
                     <td>3HE 11598 AAAA TQZZA 01 </td>
                     <td>1 / Nov 18, 2016</td>
@@ -737,7 +759,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>71</td>
+                    <td>72</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 14.0.R5 - Part II</td>
                     <td>3HE 11599 AAAA TQZZA 01 </td>
                     <td>1 / Nov 18, 2016</td>
@@ -746,7 +768,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>72</td>
+                    <td>73</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 14.0.R7 - Part I</td>
                     <td>3HE 11598 AAAB TQZZA 01 </td>
                     <td>1 / Apr 21, 2017</td>
@@ -755,7 +777,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>73</td>
+                    <td>74</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 14.0.R7 - Part II</td>
                     <td>3HE 13300 AAAA TQZZA 01 </td>
                     <td>1 / Apr 21, 2017</td>
@@ -764,7 +786,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>74</td>
+                    <td>75</td>
                     <td>Advanced Configuration Guide for 7450 ESS, 7750 SR and 7950 XRS for Releases up to 14.0.R7 - Part III</td>
                     <td>3HE 11599 AAAB TQZZA 01 </td>
                     <td>1 / Apr 21, 2017</td>
@@ -773,7 +795,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>75</td>
+                    <td>76</td>
                     <td>SF/CPM to SF/CPM5 Hardware Upgrade Guide</td>
                     <td>3HE 11037 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / May 24, 2016</td>
@@ -782,7 +804,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>76</td>
+                    <td>77</td>
                     <td>SR OS 14.0 AA Protocols and Application Support</td>
                     <td>3HE 13351 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jun 29, 2017</td>
@@ -791,7 +813,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>77</td>
+                    <td>78</td>
                     <td>SR OS 14.0.R1 Software Release Notes</td>
                     <td>3HE10818 0001 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Mar 21, 2016</td>
@@ -800,7 +822,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>78</td>
+                    <td>79</td>
                     <td>SR OS 14.0.R10 Software Release Notes</td>
                     <td>3HE10818 0010 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jun 23, 2017</td>
@@ -809,7 +831,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>79</td>
+                    <td>80</td>
                     <td>SR OS 14.0.R2 Software Release Notes</td>
                     <td>3HE10818 0002 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Apr 11, 2016</td>
@@ -818,7 +840,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>80</td>
+                    <td>81</td>
                     <td>SR OS 14.0.R3 Software Release Notes</td>
                     <td>3HE10818 0003 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / May 27, 2016</td>
@@ -827,7 +849,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>81</td>
+                    <td>82</td>
                     <td>SR OS 14.0.R4 Software Release Notes</td>
                     <td>3HE10818 0004 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Aug 11, 2016</td>
@@ -836,7 +858,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>82</td>
+                    <td>83</td>
                     <td>SR OS 14.0.R5 Software Release Notes</td>
                     <td>3HE10818 0005 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 3, 2016</td>
@@ -845,7 +867,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>83</td>
+                    <td>84</td>
                     <td>SR OS 14.0.R6 Software Release Notes</td>
                     <td>3HE10818 0006 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 29, 2016</td>
@@ -854,7 +876,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>84</td>
+                    <td>85</td>
                     <td>SR OS 14.0.R8 Software Release Notes</td>
                     <td>3HE10818 0008 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Apr 10, 2017</td>
@@ -863,7 +885,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>85</td>
+                    <td>86</td>
                     <td>SR OS 14.0.R9 Software Release Notes</td>
                     <td>3HE10818 0009 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / May 17, 2017</td>
@@ -872,7 +894,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>86</td>
+                    <td>87</td>
                     <td>SR_OS_14.0.R11_Software_Release_Notes</td>
                     <td>3HE10818 0011 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 1, 2017</td>
@@ -881,7 +903,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>87</td>
+                    <td>88</td>
                     <td>SR_OS_14.0.R12_Software_Release_Notes</td>
                     <td>3HE10818 0012 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 26, 2017</td>
@@ -890,7 +912,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>88</td>
+                    <td>89</td>
                     <td>SR_OS_14.0.R7_Software_Release_Notes</td>
                     <td>3HE10818 0007 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jan 27, 2017</td>
@@ -899,7 +921,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>89</td>
+                    <td>90</td>
                     <td>SR_OS_14.0_AA_Protocols_and_Applications</td>
                     <td>3HE 10817 AAAA TQZZA 13 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 26, 2017</td>
