@@ -28,6 +28,8 @@
       $context.show().unmark();
       if (term) {
         $context.mark(term, {
+          "separateWordSearch": false,
+          "wildcards": "enabled",
           done: function() {
             $context.not(":has(mark)").hide();
           }
