@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -28,6 +32,12 @@
 
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
         }
     </style>
     
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>NUAGE</code>
                   release <code>4.0.R9</code>
-                  <small>generated on 2017/08/31</small></h3></div>
+                  <small>generated on 2017/12/16</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term...">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>

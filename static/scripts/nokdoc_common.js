@@ -6,3 +6,32 @@
   ga('create', 'UA-90965544-1', 'auto');
   ga('send', 'pageview');
 
+  // Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/
+  $.fn.pressEnter = function(fn) {  
+    
+        return this.each(function() {  
+            $(this).bind('enterPress', fn);
+            $(this).keyup(function(e){
+                if(e.keyCode == 13)
+                {
+                  $(this).trigger("enterPress");
+                }
+            })
+        });  
+     }; 
+  $(function() {
+    $("input[name='keyword']").focus();
+    var $input = $("input[name='keyword']"),
+      $context = $("table tbody tr");
+    $input.pressEnter(function() {
+      var term = $(this).val();
+      $context.show().unmark();
+      if (term) {
+        $context.mark(term, {
+          done: function() {
+            $context.not(":has(mark)").hide();
+          }
+        });
+      }
+    });
+  });
