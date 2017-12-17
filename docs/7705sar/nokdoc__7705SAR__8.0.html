@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>7705SAR</code>
                   release <code>8.0</code>
-                  <small>generated on 2017/08/31</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -71,161 +84,143 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>7705 SAR 10-port 1GigE / 1-port 10GigE X-Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10976 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 10-port 1GigE / 1-port 10GigE X-Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10976 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10976AAABTQZZA01_V1_7705 SAR 10-port 1GigE  1-port 10GigE X-Adapter Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10976AAACTQZZA01_V1_7705 SAR 10-port 1GigE  1-port 10GigE X-Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>7705 SAR 2-port 10GigE (Ethernet) Adapter Card/ Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10977 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 2-port 10GigE (Ethernet) Adapter Card/ Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10977 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10977AAABTQZZA01_V1_7705 SAR 2-port 10GigE (Ethernet) Adapter Card Module Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10977AAACTQZZA01_V1_7705 SAR 2-port 10GigE (Ethernet) Adapter Card Module Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>7705 SAR 4-port SAR-H Fast Ethernet Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10978 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 4-port SAR-H Fast Ethernet Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10978 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10978AAABTQZZA01_V1_7705 SAR 4-port SAR-H Fast Ethernet Module Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10978AAACTQZZA01_V1_7705 SAR 4-port SAR-H Fast Ethernet Module Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td>7705 SAR 4-port T1/E1 &amp; RS-232 Combination Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10979 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 4-port T1/E1 &amp; RS-232 Combination Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10979 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10979AAABTQZZA01_V1_7705 SAR 4-port T1E1 & RS-232 Combination Module Installation Guide R8.0.R4 .pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10979AAACTQZZA01_V1_7705 SAR 4-port T1E1 & RS-232 Combination Module Installation Guide R8.0.R7 .pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td>7705 SAR 6-port E&amp;M Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10980 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 6-port E&amp;M Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10980 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10980AAABTQZZA01_V1_7705 SAR 6-port E&M Adapter Card Installation Guide R8.0.R4 .pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10980AAACTQZZA01_V1_7705 SAR 6-port E&M Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>6</td>
-                    <td>7705 SAR 6-port FXS Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10982 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 6-port FXS Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10982 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10982AAABTQZZA01_V1_7705 SAR 6-port FXS Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10982AAACTQZZA01_V1_7705 SAR 6-port FXS Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>7</td>
-                    <td>7705 SAR 6-port SAR-M Ethernet Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10981 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 6-port SAR-M Ethernet Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10981 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10981AAABTQZZA01_V1_7705 SAR 6-port SAR-M Ethernet Module Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10981AAACTQZZA01_V1_7705 SAR 6-port SAR-M Ethernet Module Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>8</td>
-                    <td>7705 SAR 8-port FXO Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10983 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 8-port FXO Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10983 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10983AAABTQZZA01_V1_7705 SAR 8-port FXO Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10983AAACTQZZA01_V1_7705 SAR 8-port FXO Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>9</td>
-                    <td>7705 SAR 8-port Voice &amp; Teleprotection Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10984 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR 8-port Voice &amp; Teleprotection Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10984 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10984AAABTQZZA01_V1_7705 SAR 8-port Voice & Teleprotection Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10984AAACTQZZA01_V1_7705 SAR 8-port Voice & Teleprotection Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>10</td>
-                    <td>7705 SAR 8.0 R4 Infocenter</td>
-                    <td>7705SAR80R4A </td>
-                    <td>2 / May 11, 2017</td>
+                    <td>7705 SAR 8.0 R7 Infocenter</td>
+                    <td>7705SAR80R7A </td>
+                    <td>1 / Nov 17, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/7705SAR80R4A/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/7705SAR80R7A/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>11</td>
-                    <td>7705 SAR 8.0 R4 Infocenter - Restricted content</td>
-                    <td>7705SAR80R4 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>2 / May 11, 2017</td>
+                    <td>7705 SAR 8.0 R7 Infocenter - Restricted content</td>
+                    <td>7705SAR80R7 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 17, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>12</td>
-                    <td>7705 SAR 8.0.R1 Infocenter - Restricted content</td>
-                    <td>7705SAR80R1 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Sep 30, 2016</td>
+                    <td>7705 SAR Auxiliary Alarm Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10985 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10985AAACTQZZA01_V1_7705 SAR Auxiliary Alarm Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>13</td>
-                    <td>7705 SAR 8.0R1 Infocenter</td>
-                    <td>7705SAR80R1A </td>
-                    <td>1 / Sep 30, 2016</td>
+                    <td>7705 SAR Basic System Configuration Guide R8.0.R7</td>
+                    <td>3HE 11010 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/7705SAR80R1A/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11010AAACTQZZA01_V1_7705 SAR Basic System Configuration Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11010AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>14</td>
-                    <td>7705 SAR Auxiliary Alarm Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10985 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Card and Module Support Quick Reference Card, Release 8.0</td>
+                    <td>3HE 12133 AAAB TQZZA 01 </td>
+                    <td>1 / Nov 17, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10985AAABTQZZA01_V1_7705 SAR Auxiliary Alarm Card Installation Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE12133AAABTQZZA01_V1_7705 SAR Card and Module Support Quick Reference Card Release 8.0.pdf">PDF </a>
                     </td>
                   </tr>
                   <tr>
                     <td>15</td>
-                    <td>7705 SAR Basic System Configuration Guide R8.0.R4</td>
-                    <td>3HE 11010 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11010AAABTQZZA01_V1_7705 SAR Basic System Configuration Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11010AAABTQZZA01/index.html">HTML </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>16</td>
-                    <td>7705 SAR Card and Module Support Quick Reference Card, Release 8.0</td>
-                    <td>3HE 12133 AAAA TQZZA 01 </td>
-                    <td>1 / May 11, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE12133AAAATQZZA01_V1_7705 SAR Card and Module Support Quick Reference Card Release 8.0.pdf">PDF </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>17</td>
                     <td>7705 SAR Command Line Interface Quick Reference Card</td>
                     <td>3HE 06623 AAAB TQZZA_01 </td>
                     <td>1 / May 11, 2017</td>
@@ -234,86 +229,86 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>18</td>
-                    <td>7705 SAR CWDM OADM Adapter Card/Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10986 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>16</td>
+                    <td>7705 SAR CWDM OADM Adapter Card/Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10986 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10986AAABTQZZA01_V1_7705 SAR CWDM OADM Adapter CardModule Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10986AAACTQZZA01_V1_7705 SAR CWDM OADM Adapter CardModule Installation Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>7705 SAR Documentation Set Overview R8.0.R7</td>
+                    <td>3HE 11020 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11020AAACTQZZA01_V1_7705 SAR Documentation Set Overview R8.0.R7.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>7705 SAR DS3/E3 Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10987 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10987AAACTQZZA01_V1_7705 SAR DS3E3 Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>19</td>
-                    <td>7705 SAR Documentation Set Overview R8.0.R4</td>
-                    <td>3HE 11020 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR DSL Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10988 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11020AAABTQZZA01_V1_7705 SAR Documentation Set Overview R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10988AAACTQZZA01_V1_7705 SAR DSL Module Installation Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>20</td>
-                    <td>7705 SAR DS3/E3 Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10987 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Ethernet/Gigabit Ethernet Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10989 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10987AAABTQZZA01_V1_7705 SAR DS3E3 Adapter Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10989AAACTQZZA01_V1_7705 SAR EthernetGigabit Ethernet Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>21</td>
-                    <td>7705 SAR DSL Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10988 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR GNSS Receiver Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10990 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10988AAABTQZZA01_V1_7705 SAR DSL Module Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10990AAACTQZZA01_V1_7705 SAR GNSS Receiver Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>22</td>
-                    <td>7705 SAR Ethernet/Gigabit Ethernet Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10989 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR GPON Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10991 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10989AAABTQZZA01_V1_7705 SAR EthernetGigabit Ethernet Adapter Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10991AAACTQZZA01_V1_7705 SAR GPON Module Installation Guide R8.0.R7 .pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>23</td>
-                    <td>7705 SAR GNSS Receiver Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10990 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR GPS Receiver Module Installation Guide R8.0.R7</td>
+                    <td>3HE 10992 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10990AAABTQZZA01_V1_7705 SAR GNSS Receiver Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10992AAACTQZZA01_V1_7705 SAR GPS Receiver Module Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>24</td>
-                    <td>7705 SAR GPON Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10991 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10991AAABTQZZA01_V1_7705 SAR GPON Module Installation Guide R8.0.R4 .pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>25</td>
-                    <td>7705 SAR GPS Receiver Module Installation Guide R8.0.R4</td>
-                    <td>3HE 10992 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10992AAABTQZZA01_V1_7705 SAR GPS Receiver Module Installation Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>26</td>
                     <td>7705 SAR Installation, Provisioning, and Commissioning Checklist, Release 8.0</td>
                     <td>3HE 12134 AAAA TQZZA 01 </td>
                     <td>1 / May 11, 2017</td>
@@ -322,47 +317,47 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>27</td>
-                    <td>7705 SAR Integrated Services Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10993 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>25</td>
+                    <td>7705 SAR Integrated Services Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10993 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10993AAABTQZZA01_V1_7705 SAR Integrated Services Card Installation Guide R8.0.R4 .pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10993AAACTQZZA01_V1_7705 SAR Integrated Services Card Installation Guide R8.0.R7 .pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>28</td>
-                    <td>7705 SAR Interface Configuration Guide R8.0.R4</td>
-                    <td>3HE 11011 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>26</td>
+                    <td>7705 SAR Interface Configuration Guide R8.0.R7</td>
+                    <td>3HE 11011 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11011AAABTQZZA01_V1_7705 SAR Interface Configuration Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11011AAABTQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11011AAACTQZZA01_V1_7705 SAR Interface Configuration Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11011AAACTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>7705 SAR MPLS Guide R8.0.R7</td>
+                    <td>3HE 11012 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11012AAACTQZZA01_V1_7705 SAR MPLS Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11012AAACTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>7705 SAR OAM and Diagnostics Guide R8.0.R7</td>
+                    <td>3HE 11013 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11013AAACTQZZA01_V1_7705 SAR OAM and Diagnostics Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11013AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>29</td>
-                    <td>7705 SAR MPLS Guide R8.0.R4</td>
-                    <td>3HE 11012 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11012AAABTQZZA01_V1_7705 SAR MPLS Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11012AAABTQZZA01/index.html">HTML </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>30</td>
-                    <td>7705 SAR OAM and Diagnostics Guide R8.0.R4</td>
-                    <td>3HE 11013 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11013AAABTQZZA01_V1_7705 SAR OAM and Diagnostics Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11013AAABTQZZA01/index.html">HTML </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>31</td>
                     <td>7705 SAR OS 8.0.R1 Software Release Notice</td>
                     <td>3HE110570001TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 30, 2016</td>
@@ -371,7 +366,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>32</td>
+                    <td>30</td>
                     <td>7705 SAR OS 8.0.R2 Software Release Notice</td>
                     <td>3HE110570002TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -380,7 +375,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>33</td>
+                    <td>31</td>
                     <td>7705 SAR OS 8.0.R3 Software Release Notice</td>
                     <td>3HE110570003TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jan 25, 2017</td>
@@ -389,7 +384,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>34</td>
+                    <td>32</td>
                     <td>7705 SAR OS 8.0.R4 Software Release Notice</td>
                     <td>3HE110570004TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Apr 5, 2017</td>
@@ -398,7 +393,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>35</td>
+                    <td>33</td>
                     <td>7705 SAR OS 8.0.R5 Software Release Notice</td>
                     <td>3HE110570005TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / May 31, 2017</td>
@@ -407,7 +402,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>36</td>
+                    <td>34</td>
                     <td>7705 SAR OS 8.0.R6 Software Release Notice</td>
                     <td>3HE110570006TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 26, 2017</td>
@@ -416,230 +411,248 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>37</td>
-                    <td>7705 SAR Packet Microwave Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10995 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>35</td>
+                    <td>7705 SAR OS 8.0.R7 Software Release Notice</td>
+                    <td>3HE110570007TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10995AAABTQZZA01_V1_7705 SAR Packet Microwave Adapter Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE110570007TQZZA01_V1_7705 SAR OS 8.0.R7 Software Release Notice.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td>7705 SAR OS 8.0.R8 Software Release Notice</td>
+                    <td>3HE110570008TQZZA_01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE110570008TQZZA01_V1_7705 SAR OS 8.0.R8 Software Release Notice.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>7705 SAR Packet Microwave Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10995 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10995AAACTQZZA01_V1_7705 SAR Packet Microwave Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>38</td>
-                    <td>7705 SAR Power Injector Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10996 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Power Injector Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10996 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10996AAABTQZZA01_V1_7705 SAR Power Injector Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10996AAACTQZZA01_V1_7705 SAR Power Injector Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>39</td>
-                    <td>7705 SAR Quality of Service Guide R8.0.R4</td>
-                    <td>3HE 11014 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Quality of Service Guide R8.0.R7</td>
+                    <td>3HE 11014 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11014AAABTQZZA01_V1_7705 SAR Quality of Service Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11014AAABTQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11014AAACTQZZA01_V1_7705 SAR Quality of Service Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11014AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>40</td>
                     <td>7705 SAR Quick Reference for Services, Encapsulations, and Synchronization per Adapter Card, Platform, and Module, Release 8.0</td>
-                    <td>3HE 12135 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / May 11, 2017</td>
+                    <td>3HE 12135 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 17, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12135AAAATQZZA01_V1_7705 SAR Quick Reference for Services Encapsulations and Synchronization per Adapter Card Platform and Module Release 8.0.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12135AAABTQZZA01_V1_7705 SAR Quick Reference for Services Encapsulations and Synchronization per Adapter Card Platform and Module Release 8.0.pdf">PDF </a>
                     </td>
                   </tr>
                   <tr>
                     <td>41</td>
-                    <td>7705 SAR Router Configuration Guide R8.0.R4</td>
-                    <td>3HE 11015 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Router Configuration Guide R8.0.R7</td>
+                    <td>3HE 11015 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11015AAABTQZZA01_V1_7705 SAR Router Configuration Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11015AAABTQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11015AAACTQZZA01_V1_7705 SAR Router Configuration Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11015AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>42</td>
-                    <td>7705 SAR Routing Protocols Guide R8.0.R4</td>
-                    <td>3HE 11016 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Routing Protocols Guide R8.0.R7</td>
+                    <td>3HE 11016 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11016AAABTQZZA01_V1_7705 SAR Routing Protocols Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11016AAABTQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11016AAACTQZZA01_V1_7705 SAR Routing Protocols Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11016AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>43</td>
-                    <td>7705 SAR Serial Data Interface Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10997 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Serial Data Interface Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10997 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10997AAABTQZZA01_V1_7705 SAR Serial Data Interface Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10997AAACTQZZA01_V1_7705 SAR Serial Data Interface Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>44</td>
-                    <td>7705 SAR Services Guide R8.0.R4</td>
-                    <td>3HE 11017 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR Services Guide R8.0.R7</td>
+                    <td>3HE 11017 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11017AAABTQZZA01_V1_7705 SAR Services Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11017AAABTQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11017AAACTQZZA01_V1_7705 SAR Services Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11017AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>45</td>
-                    <td>7705 SAR SONET/SDH Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10994 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR SONET/SDH Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10994 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10994AAABTQZZA01_V1_7705 SAR SONETSDH Adapter Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10994AAACTQZZA01_V1_7705 SAR SONETSDH Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>46</td>
-                    <td>7705 SAR System Management Guide R8.0.R4</td>
-                    <td>3HE 11018 AAAB TQZZA 01 </td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR System Management Guide R8.0.R7</td>
+                    <td>3HE 11018 AAAC TQZZA 01 </td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11018AAABTQZZA01_V1_7705 SAR System Management Guide R8.0.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11018AAABTQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11018AAACTQZZA01_V1_7705 SAR System Management Guide R8.0.R7.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE11018AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>47</td>
-                    <td>7705 SAR T1/E1 ASAP Adapter Card Installation Guide R8.0.R4</td>
-                    <td>3HE 10998 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR T1/E1 ASAP Adapter Card Installation Guide R8.0.R7</td>
+                    <td>3HE 10998 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10998AAABTQZZA01_V1_7705 SAR T1E1 ASAP Adapter Card Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10998AAACTQZZA01_V1_7705 SAR T1E1 ASAP Adapter Card Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>48</td>
-                    <td>7705 SAR Zipped Collection R8.0.R4</td>
-                    <td>3HE 11019 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>2 / May 11, 2017</td>
+                    <td>7705 SAR Zipped Collection R8.0.R7</td>
+                    <td>3HE 11019 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Nov 17, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">ZIP </a>
                     </td>
                   </tr>
                   <tr>
                     <td>49</td>
-                    <td>7705 SAR-18 Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 10999 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-18 Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 10999 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10999AAABTQZZA01_V1_7705 SAR-18 Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10999AAACTQZZA01_V1_7705 SAR-18 Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>50</td>
-                    <td>7705 SAR-8 Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11000 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-8 Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11000 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11000AAABTQZZA01_V1_7705 SAR-8 Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11000AAACTQZZA01_V1_7705 SAR-8 Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>51</td>
-                    <td>7705 SAR-A Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11001 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-A Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11001 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11001AAABTQZZA01_V1_7705 SAR-A Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11001AAACTQZZA01_V1_7705 SAR-A Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>52</td>
-                    <td>7705 SAR-Ax Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11002 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-Ax Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11002 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11002AAABTQZZA01_V1_7705 SAR-Ax Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11002AAACTQZZA01_V1_7705 SAR-Ax Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>53</td>
-                    <td>7705 SAR-H Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11003 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-H Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11003 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11003AAABTQZZA01_V1_7705 SAR-H Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11003AAACTQZZA01_V1_7705 SAR-H Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>54</td>
-                    <td>7705 SAR-Hc Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11004 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-Hc Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11004 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11004AAABTQZZA01_V1_7705 SAR-Hc Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11004AAACTQZZA01_V1_7705 SAR-Hc Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>55</td>
-                    <td>7705 SAR-M Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11005 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-M Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11005 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11005AAABTQZZA01_V1_7705 SAR-M Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11005AAACTQZZA01_V1_7705 SAR-M Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>56</td>
-                    <td>7705 SAR-O Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11006 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-O Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11006 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11006AAABTQZZA01_V1_7705 SAR-O Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11006AAACTQZZA01_V1_7705 SAR-O Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>57</td>
-                    <td>7705 SAR-W Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11007 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-W Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11007 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11007AAABTQZZA01_V1_7705 SAR-W Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11007AAACTQZZA01_V1_7705 SAR-W Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>58</td>
-                    <td>7705 SAR-Wx Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11008 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-Wx Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11008 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11008AAABTQZZA01_V1_7705 SAR-Wx Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11008AAACTQZZA01_V1_7705 SAR-Wx Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>59</td>
-                    <td>7705 SAR-X Chassis Installation Guide R8.0.R4</td>
-                    <td>3HE 11009 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 29, 2017</td>
+                    <td>7705 SAR-X Chassis Installation Guide R8.0.R7</td>
+                    <td>3HE 11009 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11009AAABTQZZA01_V1_7705 SAR-X Chassis Installation Guide R8.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11009AAACTQZZA01_V1_7705 SAR-X Chassis Installation Guide R8.0.R7.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=8.0&sortby=Title, A-Z">HTML </a>
                     </td>
                   </tr>
