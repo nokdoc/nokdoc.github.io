@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>NUAGE</code>
                   release <code>4.0.R6</code>
-                  <small>generated on 2017/08/31</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -82,6 +95,16 @@
                   <tr>
                     <td>2</td>
                     <td>Nuage 7850 VSA-VSG Installation Guide</td>
+                    <td>3HE10732AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10732AAAG_V1_Nuage 7850 VSA-VSG Installation Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10732AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Nuage 7850 VSA-VSG Installation Guide</td>
                     <td>3HE10732AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
                     <td>
@@ -90,7 +113,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>3</td>
+                    <td>4</td>
                     <td>Nuage VSP 4.0.R6 and Microsoft Hyper-V Integration Guide</td>
                     <td>3HE11477AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -100,7 +123,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>4</td>
+                    <td>5</td>
                     <td>Nuage VSP 4.0.R6 API Programming Guide</td>
                     <td>3HE10733AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -110,7 +133,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>5</td>
+                    <td>6</td>
                     <td>Nuage VSP 4.0.R6 CloudStack 4.3 Plugin Guide</td>
                     <td>3HE10726AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -120,7 +143,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>6</td>
+                    <td>7</td>
                     <td>Nuage VSP 4.0.R6 CloudStack 4.5 Plugin Guide</td>
                     <td>3HE10727AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -130,7 +153,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>7</td>
+                    <td>8</td>
                     <td>Nuage VSP 4.0.R6 Install Guide</td>
                     <td>3HE10724AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -140,7 +163,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>8</td>
+                    <td>9</td>
                     <td>Nuage VSP 4.0.R6 Kubernetes Integration Guide</td>
                     <td>3HE11202AAAD <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -150,7 +173,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>9</td>
+                    <td>10</td>
                     <td>Nuage VSP 4.0.R6 Modular Layer 2 Mechanism Driver VMs User Guide</td>
                     <td>3HE10974AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -160,7 +183,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>10</td>
+                    <td>11</td>
                     <td>Nuage VSP 4.0.R6 OpenShift Integration Guide</td>
                     <td>3HE10933AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -170,7 +193,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>11</td>
+                    <td>12</td>
                     <td>Nuage VSP 4.0.R6 OpenStack Kilo Neutron Plugin User Guide</td>
                     <td>3HE10730AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -180,7 +203,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>12</td>
+                    <td>13</td>
                     <td>Nuage VSP 4.0.R6 OpenStack Liberty Neutron Plugin User Guide</td>
                     <td>3HE10731AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -190,7 +213,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>13</td>
+                    <td>14</td>
                     <td>Nuage VSP 4.0.R6 OpenStack Mitaka Neutron Plugin User Guide</td>
                     <td>3HE10560AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -200,7 +223,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>14</td>
+                    <td>15</td>
                     <td>Nuage VSP 4.0.R6 Release Notes-Issue-2</td>
                     <td>3HE10725AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Nov 30, 2016</td>
@@ -210,7 +233,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>15</td>
+                    <td>16</td>
                     <td>Nuage VSP 4.0.R6 User Guide</td>
                     <td>3HE10723AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -220,7 +243,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>16</td>
+                    <td>17</td>
                     <td>Nuage VSP 4.0.R6 vCenter Plugin Guide</td>
                     <td>3HE10736AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -230,7 +253,57 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>17</td>
+                    <td>18</td>
+                    <td>Nuage VSP 4.0.R6.1 Install Guide</td>
+                    <td>3HE10724AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10724AAAG_V1_Nuage VSP 4.0.R6.1 Install Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10724AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>Nuage VSP 4.0.R6.1 OpenStack Mitaka Neutron Plugin User Guide</td>
+                    <td>3HE10560AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10560AAAG_V1_Nuage VSP 4.0.R6.1 OpenStack Mitaka Neutron Plugin User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10560AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Nuage VSP 4.0.R6.1 Release Notes</td>
+                    <td>3HE10725AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10725AAAG_V1_Nuage VSP 4.0.R6.1 Release Notes.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10725AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>Nuage VSP 4.0.R6.1 User Guide</td>
+                    <td>3HE10723AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10723AAAG_V1_Nuage VSP 4.0.R6.1 User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10723AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Nuage VSS 4.0.R6.1 User Guide</td>
+                    <td>3HE11593AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11593AAAA_V1_Nuage VSS 4.0.R6.1 User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11593AAAA/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
                     <td>Nuage VNS 4.0.R6 Install Guide</td>
                     <td>3HE10720AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
@@ -240,7 +313,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>18</td>
+                    <td>24</td>
                     <td>Nuage VNS 4.0.R6 Release Notes-Issue-2</td>
                     <td>3HE10718AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Nov 30, 2016</td>
@@ -250,13 +323,43 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>19</td>
+                    <td>25</td>
                     <td>Nuage VNS 4.0.R6 User Guide</td>
                     <td>3HE10719AAAF <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 30, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10719AAAF_V1_Nuage VNS 4.0.R6 User Guide.pdf">PDF </a>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10719AAAF/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>Nuage VNS 4.0.R6.1 Install Guide</td>
+                    <td>3HE10720AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10720AAAG_V1_Nuage VNS 4.0.R6.1 Install Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10720AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>Nuage VNS 4.0.R6.1 Release Notes-Issue-2</td>
+                    <td>3HE10718AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Dec 28, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10718AAAG_V1_Nuage VNS 4.0.R6.1 Release Notes-Issue-2.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10718AAAG/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>Nuage VNS 4.0.R6.1 User Guide</td>
+                    <td>3HE10719AAAG <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10719AAAG_V1_Nuage VNS 4.0.R6.1 User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10719AAAG/index.html">HTML </a>
                     </td>
                   </tr>
                 </tbody>

@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>7750SR</code>
                   release <code>MG9.0</code>
-                  <small>generated on 2017/11/30</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -93,7 +106,7 @@
                     <td>3HE 12098 AAAA TQZZA 08 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 24, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12098AAAATQZZA08/index9-0-R6/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -103,7 +116,7 @@
                     <td>1 / Mar 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11714AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 Configuration Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11714AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -113,7 +126,7 @@
                     <td>1 / Mar 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11713AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 EPDG Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11713AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -122,8 +135,8 @@
                     <td>3HE 11717 AAAA TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / May 4, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11717AAAATQZZA02/html/counters.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/847746-Issue3.847746.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -133,7 +146,7 @@
                     <td>1 / Mar 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11716AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 KPI-KCI Counters Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11716AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -143,7 +156,7 @@
                     <td>2 / Mar 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11715AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 Multiservice Integrated Service Adapter Guide .pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11715AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -153,7 +166,7 @@
                     <td>1 / Mar 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11718AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 PCMD Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11718AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -162,7 +175,7 @@
                     <td>7750MGCMG90R1 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>5 / Aug 25, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750MGCMG90R1/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -171,7 +184,7 @@
                     <td>7750SRMG90R5 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 16, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750SRMG90R5/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -181,7 +194,7 @@
                     <td>1 / Oct 16, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11714AAABTQZZA01_V1_7750 SR MG and CMG Configuration Guide  R9.0.R5.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11714AAABTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -191,7 +204,7 @@
                     <td>1 / Oct 16, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11713AAABTQZZA01_V1_7750 SR MG and CMG EPDG Guide R9.0.R5.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11713AAABTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -201,7 +214,7 @@
                     <td>1 / Oct 16, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11716AAABTQZZA01_V1_7750 SR MG and CMG KPI-KCI Counters Guide R9.0.R5.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11716AAABTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -210,8 +223,8 @@
                     <td>3HE 11717 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 16, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11717AAABTQZZA01/counters.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/857436-Issue1.857436.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -221,7 +234,7 @@
                     <td>1 / Oct 16, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE13492AAAATQZZA01_V1_7750 SR MG and CMG Log Events Guide R9.0.R5.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE13492AAAATQZZA01/html/events.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -231,7 +244,7 @@
                     <td>1 / Oct 16, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11715AAABTQZZA01_V1_7750 SR MG and CMG Multiservice Integrated Service Adapter Guide  R9.0.R5.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11715AAABTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -258,7 +271,7 @@
                     <td>3HE 12250 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / May 4, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/847604-Issue3.847604.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -267,7 +280,7 @@
                     <td>3HE 12250 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / Nov 1, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002238&release=MG9.0&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/858066-Issue3.858066.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>

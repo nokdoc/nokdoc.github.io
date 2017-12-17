@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>NSP</code>
                   release <code>17.9</code>
-                  <small>generated on 2017/12/14</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -112,7 +125,7 @@
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12020AAACTQZZA01_V1_7701 CPAA Release 10.0 R3 Setup and Installation Guide .pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12020AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -122,9 +135,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624RAAA_V1_NFM-T 16x6 Photonic Guide 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624RAAA/16x6Photo/17.9/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -134,9 +145,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624MAAA_V1_NFM-T Administration Guide: Common Functions 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624MAAA/AdminV2/17.9/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -146,9 +155,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624LAAA_V1_NFM-T Administration Guide: System Maintenance and Troubleshooting 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624LAAA/AdminV1/17.9/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -158,9 +165,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624BAAA_V1_NFM-T EML Guide for Specific Networks 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624BAAA/EML/179/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -170,9 +175,7 @@
                     <td>2 / Oct 10, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624AAAA_V1_NFM-T Getting Started Guide 17.9 Issue 2.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624AAAA/GS/179/webdocs-enus/3KC73624AAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -182,9 +185,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624GAAA_V1_NFM-T HA Guide 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624GAAA/HA/179/webdocs-enus/3KC73624GAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -194,9 +195,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624HAAA_V1_NFM-T OI Guide 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624HAAA/NFM-T/R17.9/webdocs-enus/3KC73624HAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -206,9 +205,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624JAAA_V1_NFM-T OIS TMF814 CORBA Interface Specification 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624JAAA/NFM-T/R17.9/webdocs-enus/3KC73624JAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -218,9 +215,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624VAAA_V1_NFM-T OTN Ethernet Service Manager Guide 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624VAAA/NFM-T/R17.9/webdocs-enus/3KC73624VAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -230,9 +225,7 @@
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624QAAA_V1_NFM-T OTN Guide 17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624QAAA/OTN/17.9/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -246,6 +239,33 @@
                   </tr>
                   <tr>
                     <td>17</td>
+                    <td>NFM-T R17.9 Issue1 Transformation</td>
+                    <td>3KC73624YAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 6, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73624YAAA/857076.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>NFM-T R17.9 Issue2 Firewall Configuration</td>
+                    <td>3KC73624ZAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 13, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73624ZAAA/857364.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>NFM-T R17.9 Issue2 Upgrade Guide</td>
+                    <td>3KC73624TAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 6, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73624TAAA/857085.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
                     <td>NFM-T R17.9 Issue3 Installation Guide</td>
                     <td>3KC73624NAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / Oct 18, 2017</td>
@@ -254,7 +274,25 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>18</td>
+                    <td>21</td>
+                    <td>NFM-T R17.9 Issue3 Migration Scenarios</td>
+                    <td>3KC73624KAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Oct 17, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73624KAAA/857502.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>NFM-T R17.9_SP1 Issue1 Firewall Configuration</td>
+                    <td>3KC73633FAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 7, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73633FAAA/858196.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
                     <td>NFM-T R17.9_SP1 Issue1 HW and OS Installation Guide</td>
                     <td>3KC73633BAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Nov 7, 2017</td>
@@ -263,7 +301,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>19</td>
+                    <td>24</td>
+                    <td>NFM-T R17.9_SP1 Issue1 Transformation</td>
+                    <td>3KC73633EAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 7, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73633EAAA/858199.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
                     <td>NFM-T R17.9_SP1 Issue2 Installation Guide</td>
                     <td>3KC73633AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Nov 13, 2017</td>
@@ -272,19 +319,35 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>20</td>
+                    <td>26</td>
+                    <td>NFM-T R17.9_SP1 Issue2 Upgrade Guide</td>
+                    <td>3KC73633CAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Nov 13, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73633CAAA/858371.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>NFM-T R17.9_SP1 Issue3 Migration Scenarios</td>
+                    <td>3KC73633DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Nov 29, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3KC73633DAAA/858704.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
                     <td>NFM-T Service Assurance Guide, R17.9, Issue 1</td>
                     <td>3KC73624FAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 6, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3KC73624FAAA_V1_NFM-T Service Assurance Guide R17.9 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3KC73624FAAA/NFM-T/R17.9/webdocs-enus/3KC73624FAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>21</td>
+                    <td>29</td>
                     <td>NSP 17.9 Installer Reference</td>
                     <td>3HE 12066 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
@@ -293,7 +356,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>22</td>
+                    <td>30</td>
                     <td>NSP 17.9 Release Notice</td>
                     <td>3HE 12069 0006 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Oct 6, 2017</td>
@@ -302,7 +365,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>23</td>
+                    <td>31</td>
                     <td>NSP NFM-P 17.9 Alarm Search Tool</td>
                     <td>3HE 13299 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -312,17 +375,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>24</td>
+                    <td>32</td>
                     <td>NSP NFM-P 17.9 Analytics Report Catalog</td>
                     <td>3HE 11986 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11986AAADTQZZA01_V1_NSP NFM-P 17.9 Analytics Report Catalog.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11986AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>25</td>
+                    <td>33</td>
                     <td>NSP NFM-P 17.9 Applications Guide</td>
                     <td>3HE 11988 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -331,27 +394,27 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>26</td>
+                    <td>34</td>
                     <td>NSP NFM-P 17.9 CPAM User Guide</td>
                     <td>3HE 11989 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11989AAADTQZZA01_V1_NSP NFM-P 17.9 CPAM User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11989AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>27</td>
+                    <td>35</td>
                     <td>NSP NFM-P 17.9 Documentation Map</td>
                     <td>3HE 11990 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11990AAADTQZZA01_V1_NSP NFM-P 17.9 Documentation Map.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11990AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>28</td>
+                    <td>36</td>
                     <td>NSP NFM-P 17.9 FlexiPacket Microwave User Guide</td>
                     <td>3HE 12099 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
@@ -360,7 +423,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>29</td>
+                    <td>37</td>
                     <td>NSP NFM-P 17.9 Glossary</td>
                     <td>3HE 11991 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -370,7 +433,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>30</td>
+                    <td>38</td>
                     <td>NSP NFM-P 17.9 Infocenter</td>
                     <td>NFMP17R9A </td>
                     <td>2 / Nov 20, 2017</td>
@@ -379,16 +442,16 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>31</td>
+                    <td>39</td>
                     <td>NSP NFM-P 17.9 Infocenter - Restricted content</td>
                     <td>NFMP17R9 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Nov 20, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/NFMP17R9/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>32</td>
+                    <td>40</td>
                     <td>NSP NFM-P 17.9 Installation and Upgrade Guide</td>
                     <td>3HE 11994 AAAD TQZZA 02 </td>
                     <td>1 / Nov 20, 2017</td>
@@ -398,27 +461,36 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>33</td>
+                    <td>41</td>
                     <td>NSP NFM-P 17.9 LTE EPC User Guide</td>
                     <td>3HE 11995 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11995AAADTQZZA01_V1_NSP NFM-P 17.9 LTE EPC User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11995AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>34</td>
+                    <td>42</td>
+                    <td>NSP NFM-P 17.9 LTE Plan of Record</td>
+                    <td>3HE 11300 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 13, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/3HE11300AAADTQZZA01/858373.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>43</td>
                     <td>NSP NFM-P 17.9 LTE RAN User Guide</td>
                     <td>3HE 11996 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11996AAADTQZZA01_V1_NSP NFM-P 17.9 LTE RAN User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11996AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>35</td>
+                    <td>44</td>
                     <td>NSP NFM-P 17.9 MPR User Guide</td>
                     <td>3HE 11997 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -428,17 +500,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>36</td>
+                    <td>45</td>
                     <td>NSP NFM-P 17.9 MultiRadio BTS User Guide</td>
                     <td>3HE 11998 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11998AAADTQZZA01_V1_NSP NFM-P 17.9 MultiRadio BTS User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11998AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>37</td>
+                    <td>46</td>
                     <td>NSP NFM-P 17.9 NFV Solutions Guide</td>
                     <td>3HE 11999 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -448,7 +520,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>38</td>
+                    <td>47</td>
                     <td>NSP NFM-P 17.9 Optical Integration Module User Guide</td>
                     <td>3HE 12000 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -458,7 +530,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>39</td>
+                    <td>48</td>
                     <td>NSP NFM-P 17.9 Optical Parameter Reference</td>
                     <td>3HE 12001 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -468,7 +540,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>40</td>
+                    <td>49</td>
                     <td>NSP NFM-P 17.9 Optical User Guide</td>
                     <td>3HE 12002 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -478,7 +550,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>41</td>
+                    <td>50</td>
                     <td>NSP NFM-P 17.9 PCMP API Reference</td>
                     <td>3HE 12004 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -487,7 +559,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>42</td>
+                    <td>51</td>
                     <td>NSP NFM-P 17.9 Planning Guide</td>
                     <td>3HE 12003 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -497,17 +569,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>43</td>
+                    <td>52</td>
                     <td>NSP NFM-P 17.9 Release Description</td>
                     <td>3HE 12005 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12005AAADTQZZA01_V1_NSP NFM-P 17.9 Release Description.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12005AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>44</td>
+                    <td>53</td>
                     <td>NSP NFM-P 17.9 Release Notice</td>
                     <td>3HE 12070 0006 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
@@ -516,17 +588,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>45</td>
+                    <td>54</td>
                     <td>NSP NFM-P 17.9 Scripts and Templates Developer Guide</td>
                     <td>3HE 12007 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12007AAADTQZZA01_V1_NSP NFM-P 17.9 Scripts and Templates Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12007AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>46</td>
+                    <td>55</td>
                     <td>NSP NFM-P 17.9 Statistics Management Guide</td>
                     <td>3HE 12009 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -536,7 +608,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>47</td>
+                    <td>56</td>
                     <td>NSP NFM-P 17.9 Statistics Search Tool</td>
                     <td>3HE 13563 AAAA TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -546,7 +618,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>48</td>
+                    <td>57</td>
                     <td>NSP NFM-P 17.9 System Administrator Guide</td>
                     <td>3HE 12010 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -556,7 +628,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>49</td>
+                    <td>58</td>
                     <td>NSP NFM-P 17.9 System Architecture Guide</td>
                     <td>3HE 12011 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -566,7 +638,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>50</td>
+                    <td>59</td>
                     <td>NSP NFM-P 17.9 Troubleshooting Guide</td>
                     <td>3HE 12012 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -576,7 +648,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>51</td>
+                    <td>60</td>
                     <td>NSP NFM-P 17.9 User Guide</td>
                     <td>3HE 12013 AAAD TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -586,65 +658,65 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>52</td>
+                    <td>61</td>
                     <td>NSP NFM-P 17.9 Wireless OSS Interface Developer Guide</td>
                     <td>3HE 12015 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12015AAADTQZZA01_V1_NSP NFM-P 17.9 Wireless OSS Interface Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12015AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>53</td>
+                    <td>62</td>
                     <td>NSP NFM-P 17.9 Wireless Parameter Reference</td>
                     <td>3HE 12016 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12016AAADTQZZA01_V1_NSP NFM-P 17.9 Wireless Parameter Reference.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12016AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>54</td>
+                    <td>63</td>
                     <td>NSP NFM-P 17.9 Wireless Release Description</td>
                     <td>3HE 12017 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12017AAADTQZZA01_V1_NSP NFM-P 17.9 Wireless Release Description.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12017AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>55</td>
+                    <td>64</td>
                     <td>NSP NFM-P 17.9 XML API Developer Guide</td>
                     <td>3HE 12018 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12018AAADTQZZA01_V1_NSP NFM-P 17.9 XML API Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12018AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>56</td>
+                    <td>65</td>
                     <td>NSP NFM-P 17.9 XML Reference</td>
                     <td>3HE 12019 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/NFMP_17_9_SAM-O-Issue1.856518.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>57</td>
-                    <td>NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 6</td>
-                    <td>3HE 10374 AAAB TQZZA 09 </td>
-                    <td>1 / Nov 29, 2017</td>
+                    <td>66</td>
+                    <td>NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 7</td>
+                    <td>3HE 10374 AAAC TQZZA 10 </td>
+                    <td>1 / Dec 13, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE10374AAABTQZZA09_V1_NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 6.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE10374AAACTQZZA10_V1_NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 7.pdf">PDF </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>58</td>
+                    <td>67</td>
                     <td>NSP NFM-P and 5620 SAM Network Element Compatibility Guide (5620 SAM Releases 12.0 and later)</td>
                     <td>3HE 12278 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>18 / Dec 13, 2017</td>
@@ -653,7 +725,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>59</td>
+                    <td>68</td>
                     <td>NSP NFM-P CloudBand AM Driver v1.0.0 Guide</td>
                     <td>3HE 13562 AAAA TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -662,7 +734,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>60</td>
+                    <td>69</td>
                     <td>NSP NFM-P GNE Driver Installation Guide</td>
                     <td>3HE 10288 AAAC TQZZA 01 </td>
                     <td>1 / Mar 29, 2017</td>
@@ -671,7 +743,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>61</td>
+                    <td>70</td>
                     <td>NSP NFM-P MPTBWA v3.1.0 Guide</td>
                     <td>3HE 13301 AAAA TQZZA 01 </td>
                     <td>1 / Jun 28, 2017</td>
@@ -680,7 +752,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>62</td>
+                    <td>71</td>
                     <td>NSP NFM-P MPTGM Driver v3.1.0 Guide</td>
                     <td>3HE 13355 AAAA TQZZA 01 </td>
                     <td>1 / Jun 28, 2017</td>
@@ -689,7 +761,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>63</td>
+                    <td>72</td>
                     <td>NSP NFM-P MPTGS Driver v2.2.0 Guide Issue 2</td>
                     <td>3HE 10851 AAAC TQZZA 02 </td>
                     <td>1 / Jun 28, 2017</td>
@@ -698,7 +770,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>64</td>
+                    <td>73</td>
                     <td>NSP NFM-P MPTSUB6 Driver v3.1.0 Guide</td>
                     <td>3HE 13356 AAAA TQZZA 01 </td>
                     <td>1 / Jun 28, 2017</td>
@@ -707,7 +779,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>65</td>
+                    <td>74</td>
                     <td>NSP NFM-P Multi-Vendor Policy Guide Issue 2</td>
                     <td>3HE 11236 AAAB TQZZA 02 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -716,7 +788,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>66</td>
+                    <td>75</td>
                     <td>NSP NFM-T 17.9 Release Notice</td>
                     <td>3HE 12277 0003 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Nov 7, 2017</td>
@@ -725,7 +797,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>67</td>
+                    <td>76</td>
                     <td>NSP NFM-T R17.9 Dimensioning and System Configuration Guideline</td>
                     <td>3KC73631AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / Nov 29, 2017</td>
@@ -734,7 +806,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>68</td>
+                    <td>77</td>
                     <td>NSP NSD and NRC 17.9 REST API Differences Guide</td>
                     <td>NSDNRC179A </td>
                     <td>1 / Sep 27, 2017</td>
@@ -743,7 +815,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>69</td>
+                    <td>78</td>
                     <td>NSP NSD and NRC 17.9 REST API HTML Collection</td>
                     <td>NSDNRC179C </td>
                     <td>1 / Sep 27, 2017</td>
@@ -752,7 +824,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>70</td>
+                    <td>79</td>
                     <td>NSP NSD and NRC 17.9 REST API Offline Reference</td>
                     <td>NSDNRC179B </td>
                     <td>1 / Sep 27, 2017</td>
@@ -761,7 +833,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>71</td>
+                    <td>80</td>
                     <td>NSP NSD and NRC 17.9 REST API Postman Collection</td>
                     <td>NSDNRC179D </td>
                     <td>1 / Sep 27, 2017</td>
@@ -770,7 +842,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>72</td>
+                    <td>81</td>
                     <td>NSP NSD and NRC Release 17.9 Installation and Upgrade Guide</td>
                     <td>3HE 13354 AAAB TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -779,7 +851,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>73</td>
+                    <td>82</td>
                     <td>NSP NSD and NRC Release 17.9 Planning Guide</td>
                     <td>3HE 12074 AAAC TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -788,7 +860,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>74</td>
+                    <td>83</td>
                     <td>NSP NSD and NRC Release 17.9 Release Description</td>
                     <td>3HE 12073 AAAC TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -797,7 +869,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>75</td>
+                    <td>84</td>
                     <td>NSP NSD and NRC Release 17.9 Release Notice</td>
                     <td>3HE 12071 0005 TQZZA 01 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -806,7 +878,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>76</td>
+                    <td>85</td>
                     <td>NSP NSD and NRC Release 17.9 Release Notice</td>
                     <td>3HE 120721 0005 TQZZA 01 </td>
                     <td>1 / Oct 6, 2017</td>
@@ -815,7 +887,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>77</td>
+                    <td>86</td>
                     <td>NSP NSD and NRC Release 17.9 User Guide</td>
                     <td>3HE 12072 AAAC TQZZA 01 </td>
                     <td>2 / Sep 27, 2017</td>
@@ -824,7 +896,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>78</td>
+                    <td>87</td>
                     <td>NSP Release 17.9 Deployment Overview</td>
                     <td>3HE 12065 AAAD TQZZA 02 </td>
                     <td>1 / Oct 10, 2017</td>
@@ -833,13 +905,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>79</td>
+                    <td>88</td>
                     <td>VSAP 17.9 User Guide</td>
                     <td>3HE 12014 AAAD TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Sep 27, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12014AAADTQZZA01_V1_VSAP 17.9 User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000004100&release=17.9&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12014AAADTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                 </tbody>

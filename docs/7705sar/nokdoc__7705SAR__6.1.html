@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>7705SAR</code>
                   release <code>6.1</code>
-                  <small>generated on 2017/08/31</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -76,7 +89,7 @@
                     <td>3 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08639AAACTQZZA01_V1_7705 SAR 10-port 1GigE  1-port 10GigE X-Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08639AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -86,7 +99,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08640AAACTQZZA01_V1_7705 SAR 2-port 10GigE (Ethernet) Adapter Card Module Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08640AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -96,7 +109,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08641AAACTQZZA01_V1_7705 SAR 4-port T1E1 & RS-232 Combination Module Installation Guide  R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08641AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -106,7 +119,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08642AAACTQZZA01_V1_7705 SAR 6-port E&M Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08642AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -116,7 +129,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08643AAACTQZZA01_V1_7705 SAR 6-port FXS Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08643AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -134,7 +147,7 @@
                     <td>7705SAR61R4 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>7 / Jan 6, 2015</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7705SAR61R4">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -144,7 +157,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08645AAACTQZZA01_V1_7705 SAR 8-port FXO Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08645AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -154,7 +167,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08644AAACTQZZA01_V1_7705 SAR 8-port Voice & Teleprotection Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08644AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -164,7 +177,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08646AAACTQZZA01_V1_7705 SAR Auxiliary Alarm Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08646AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -183,7 +196,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08647AAACTQZZA01_V1_7705 SAR CWDM OADM Adapter CardModule Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08647AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -193,7 +206,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08648AAACTQZZA01_V1_7705 SAR DS3E3 Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08648AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -203,7 +216,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08649AAACTQZZA01_V1_7705 SAR DSL Module Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08649AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -213,7 +226,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08650AAACTQZZA01_V1_7705 SAR EthernetGigabit Ethernet Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08650AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -223,7 +236,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08651AAACTQZZA01_V1_7705 SAR GPON Module Installation Guide R6.1.R4 .pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08651AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -233,7 +246,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08652AAACTQZZA02_V1_7705 SAR GPS Receiver Module Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08652AAACTQZZA02">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -252,7 +265,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08653AAACTQZZA01_V1_7705 SAR Integrated Services Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08653AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -262,7 +275,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08654AAACTQZZA01_V1_7705 SAR OC3STM1 Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08654AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -425,7 +438,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08655AAACTQZZA01_V1_7705 SAR Packet Microwave Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08655AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -435,7 +448,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08656AAACTQZZA01_V1_7705 SAR Power Injector Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08656AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -445,7 +458,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08657AAACTQZZA01_V1_7705 SAR Serial Data Interface Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08657AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -464,7 +477,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08658AAACTQZZA01_V1_7705 SAR T1E1 ASAP Adapter Card Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08658AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -473,7 +486,7 @@
                     <td>3HE 08678 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / Nov 19, 2014</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/628738-Issue3.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -483,7 +496,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08659AAACTQZZA01_V1_7705 SAR-18 Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08659AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -493,7 +506,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08660AAACTQZZA01_V1_7705 SAR-8 Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08660AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -503,7 +516,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08661AAACTQZZA01_V1_7705 SAR-A Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08661AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -522,7 +535,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08662AAACTQZZA01_V1_7705 SAR-F Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08662AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -532,7 +545,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08665AAACTQZZA01_V1_7705 SAR-H Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08665AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -542,7 +555,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08667AAACTQZZA01_V1_7705 SAR-Hc Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08667AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -552,7 +565,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08663AAACTQZZA01_V1_7705 SAR-M Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08663AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -562,7 +575,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08664AAACTQZZA01_V1_7705 SAR-O Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08664AAACTQZZA01">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -572,7 +585,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08666AAACTQZZA02_V1_7705 SAR-W Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08666AAACTQZZA02">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -582,7 +595,7 @@
                     <td>2 / Dec 19, 2014</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE08668AAACTQZZA02_V1_7705 SAR-Wx Chassis Installation Guide R6.1.R4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002735&release=6.1&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE08668AAACTQZZA02">HTML </a>
                     </td>
                   </tr>
                   <tr>

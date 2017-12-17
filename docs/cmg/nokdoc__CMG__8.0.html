@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>CMG</code>
                   release <code>8.0</code>
-                  <small>generated on 2017/11/30</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -75,7 +88,7 @@
                     <td>7750SRMG80R7 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>6 / Mar 23, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750SRMG80R7/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -148,7 +161,7 @@
                     <td>1 / Jun 29, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11195AAAATQZZA01_V1_7750 SR MG and VMG 8.0.R3-2 PCMD Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11195AAAATQZZA01/index_frame.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -158,7 +171,7 @@
                     <td>2 / Dec 12, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10509AAACTQZZA02_V1_7750 SR MG and VMG 8.0.R7 Configuration Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10509AAACTQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -168,7 +181,7 @@
                     <td>4 / Oct 27, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10509AAACTQZZA01_V1_7750 SR MG and VMG 8.0.R7 Configuration Guide   .pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10509AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -177,7 +190,7 @@
                     <td>3HE 10512 AAAC TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / Jan 27, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10512AAACTQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -187,7 +200,7 @@
                     <td>2 / Oct 27, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10511AAACTQZZA01_V1_7750 SR MG and VMG 8.0.R7 KPI-KCI Counters Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10511AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -197,7 +210,7 @@
                     <td>2 / Oct 27, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10510AAACTQZZA01_V1_7750 SR MG and VMG 8.0.R7 Multiservice Integrated Service Adapter Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10510AAACTQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -207,7 +220,7 @@
                     <td>2 / Oct 27, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11195AAABTQZZA01_V1_7750 SR MG and VMG 8.0.R7 PCMD Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11195AAABTQZZA01/index_frame.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -216,7 +229,7 @@
                     <td>3HE 10512 AAAA TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / May 5, 2016</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10512AAAATQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -225,7 +238,7 @@
                     <td>3HE 10512 AAAB TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / May 5, 2016</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10512AAABTQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -234,7 +247,7 @@
                     <td>3HE 11034 AAAA TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / May 12, 2016</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/824147-Issue2.824147.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -243,7 +256,7 @@
                     <td>3HE 11034 AAAB TQZZA 03 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Mar 23, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/841525-Issue1.841525.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -388,7 +401,7 @@
                     <td>3 / Mar 22, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11056AAABTQZZA02_V1_Virtualized Mobile Gateway 8.0.R7 Installation Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11056AAABTQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -407,7 +420,7 @@
                     <td>1 / Jul 7, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11056AAAATQZZA01_V1_Virtualized Mobile Gateway Installation Guide 8.0.R3.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002139&release=8.0&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11056AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>

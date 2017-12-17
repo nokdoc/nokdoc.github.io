@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>1350OMS</code>
                   release <code>14.2</code>
-                  <small>generated on 2017/08/31</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -76,33 +89,27 @@
                     <td>1 / Mar 31, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259RAAA_V1_1350 OMS 16x6 Photonic Guide 14.2 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259RAAA/16x6Photo/14.2/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>1350 OMS Administration Guide: Common Functions, 14.2, Issue 3</td>
-                    <td>8DG43259MAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>3 / Jun 26, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259MAAA_V1_1350 OMS Administration Guide: Common Functions 14.2 Issue 3.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
                     <td>1350 OMS Administration Guide: System Maintenance and Troubleshooting, 14.2, Issue 4</td>
                     <td>8DG43259LAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>4 / Jun 26, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259LAAA_V1_1350 OMS Administration Guide: System Maintenance and Troubleshooting 14.2 Issue 4.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259LAAA/AdminV1/14.2/webdocs-enus/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1350 OMS Administration Guide:Common Functions, 14.2, Issue 5</td>
+                    <td>8DG43259MAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>5 / Oct 11, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259MAAA_V1_1350 OMS Administration Guide:Common Functions 14.2 Issue 5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259MAAA/AdminV2/14.2/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -112,9 +119,7 @@
                     <td>1 / Mar 28, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259XAAA_V1_1350 OMS ASON Guide R14.2 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259XAAA/ason/142/webdocs-enus/8DG43259XAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -123,7 +128,7 @@
                     <td>8DG43259SAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Apr 5, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/142_1350OMSLib-enus-html-Issue1.843564.tar.gz">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -133,9 +138,7 @@
                     <td>3 / Jul 10, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259BAAA_V1_1350 OMS EML Guide for PTN Networks 14.2 Issue 3.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259BAAA/EML/14.2/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -145,21 +148,17 @@
                     <td>1 / Mar 28, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259AAAA_V1_1350 OMS Getting Started Guide 14.2 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259AAAA/GS/142/webdocs-enus/8DG43259AAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>8</td>
-                    <td>1350 OMS HA Guide, 14.2, Issue 2</td>
+                    <td>1350 OMS HA Guide, 14.2, Issue 4</td>
                     <td>8DG43259GAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>2 / Jun 30, 2017</td>
+                    <td>4 / Dec 6, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259GAAA_V1_1350 OMS HA Guide 14.2 Issue 2.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259GAAA_V1_1350 OMS HA Guide 14.2 Issue 4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259GAAA/HA/142/webdocs-enus/8DG43259GAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -196,9 +195,7 @@
                     <td>2 / May 22, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259HAAA_V1_1350 OMS OI Guide 14.2 Issue 2.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259HAAA/1350OMS/R14.2/webdocs-enus/8DG43259HAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -208,9 +205,7 @@
                     <td>1 / Mar 28, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259JAAA_V1_1350 OMS OIS TMF814 CORBA Interface Specification 14.2 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259JAAA/1350OMS/R14.2/webdocs-enus/8DG43259JAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -220,33 +215,27 @@
                     <td>1 / Mar 28, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259VAAA_V1_1350 OMS OTN Ethernet Service Manager Guide R14.2 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259VAAA/ESM/142/webdocs-enus/8DG43259VAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>15</td>
-                    <td>1350 OMS OTN Guide, 14.2, Issue 9</td>
+                    <td>1350 OMS OTN Guide, 14.2, Issue 14</td>
                     <td>8DG43259QAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>9 / Aug 14, 2017</td>
+                    <td>14 / Oct 31, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259QAAA_V1_1350 OMS OTN Guide 14.2 Issue 9.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259QAAA_V1_1350 OMS OTN Guide 14.2 Issue 14.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259QAAA/OTN/14.2/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>16</td>
-                    <td>1350 OMS PKT Guide 14.2 issue 1</td>
+                    <td>1350 OMS PKT Guide 14.2 issue 2</td>
                     <td>8DG43259DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>1 / Mar 28, 2017</td>
+                    <td>2 / Oct 25, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259DAAA_V1_1350 OMS PKT Guide 14.2 issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259DAAA_V1_1350 OMS PKT Guide 14.2 issue 2.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259DAAA/PKT/14.2/webdocs-enus/8DG43259DAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -256,9 +245,7 @@
                     <td>1 / Mar 31, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259CAAA_V1_1350 OMS PTN Management Guide 14.2 Issue 1.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259CAAA/SDH/14.2/webdocs-enus/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -272,6 +259,15 @@
                   </tr>
                   <tr>
                     <td>19</td>
+                    <td>1350 OMS R14.2 - 1830 PSS management Timer configuration for large nodes</td>
+                    <td>8DG 43259 0001 TCZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 6, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG432590001TCZZA/843711.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
                     <td>1350 OMS R14.2 CP &amp; C5 Customer Release Note</td>
                     <td>8DG 43287 AAAA FMZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3.5 / Jul 6, 2017</td>
@@ -280,7 +276,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>20</td>
+                    <td>21</td>
                     <td>1350 OMS R14.2 Installation Guide</td>
                     <td>8DG 43259 NAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Apr 11, 2017</td>
@@ -289,7 +285,25 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>21</td>
+                    <td>22</td>
+                    <td>1350 OMS R14.2 Migration Scenarios</td>
+                    <td>8DG 43259 KAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Apr 11, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43259KAAA/844326.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>1350 OMS R14.2 Transformation</td>
+                    <td>8DG 43259 YAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 3, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43259YAAA/843166.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
                     <td>1350 OMS R14.2 Upgrade Guide</td>
                     <td>8DG 43259 TAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Apr 11, 2017</td>
@@ -298,7 +312,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>22</td>
+                    <td>25</td>
                     <td>1350 OMS R14.2SP1 HW and OS Installation Guide</td>
                     <td>8DG 43294 BAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Apr 28, 2017</td>
@@ -307,7 +321,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>23</td>
+                    <td>26</td>
                     <td>1350 OMS R14.2SP1 Installation Guide</td>
                     <td>8DG 43294 AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / May 24, 2017</td>
@@ -316,16 +330,43 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>24</td>
-                    <td>1350 OMS R14.2SP3 Delivery Notes</td>
-                    <td>8DG 43287 ABAA FMZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>2.4 / Aug 9, 2017</td>
+                    <td>27</td>
+                    <td>1350 OMS R14.2SP1 Migration Scenarios</td>
+                    <td>8DG 43294 CAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Jun 13, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43287ABAAFMZZA_V1_1350 OMS R14.2SP3 Delivery Notes.pdf">PDF </a>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43294CAAA/852144.pdf">PDF </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>25</td>
+                    <td>28</td>
+                    <td>1350 OMS R14.2SP1 Transformation</td>
+                    <td>8DG 43294 EAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 28, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43294EAAA/846607.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>1350 OMS R14.2SP1 Upgrade Guide</td>
+                    <td>8DG 43294 DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 28, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43294DAAA/846606.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>1350 OMS R14.2SP3 Firewall Configuration</td>
+                    <td>8DG 43302 FAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jul 31, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43302FAAA/854297.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
                     <td>1350 OMS R14.2SP3 Installation Guide</td>
                     <td>8DG 43302 AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 31, 2017</td>
@@ -334,7 +375,88 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>26</td>
+                    <td>32</td>
+                    <td>1350 OMS R14.2SP3 Migration Scenarios</td>
+                    <td>8DG 43302 DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jul 31, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43302DAAA/854295.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>33</td>
+                    <td>1350 OMS R14.2SP3 Transformation</td>
+                    <td>8DG 43302 EAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jul 31, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43302EAAA/854296.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>34</td>
+                    <td>1350 OMS R14.2SP3 Upgrade Guide</td>
+                    <td>8DG 43302 CAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Aug 2, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43302CAAA/854397.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>35</td>
+                    <td>1350 OMS R14.2SP4 HW and OS Installation Guide</td>
+                    <td>8DG 43304 BAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 1, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43304BAAA_V1_1350 OMS R14.2SP4 HW and OS Installation Guide .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td>1350 OMS R14.2SP4 Installation Guide</td>
+                    <td>8DG 43304 AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 1, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43304AAAA_V1_1350 OMS R14.2SP4 Installation Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>1350 OMS R14.2SP4 Migration Scenarios</td>
+                    <td>8DG 43304 DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Sep 13, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43304DAAA/855852.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>1350 OMS R14.2SP4 Trasnformation</td>
+                    <td>8DG 43304 EAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 1, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43304EAAA/855568.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>39</td>
+                    <td>1350 OMS R14.2SP4 Upgrade Guide</td>
+                    <td>8DG 43304 CAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 1, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43304CAAA/855566.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>40</td>
+                    <td>1350 OMS R14.2SP5 Delivery Notes</td>
+                    <td>8DG 43287 ABAA FMZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>4.3 / Nov 22, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43287ABAAFMZZA_V1_1350 OMS R14.2SP5 Delivery Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>41</td>
                     <td>1350 OMS REST API Documentation R14.2, Issue 2</td>
                     <td>8DG43264AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / May 31, 2017</td>
@@ -343,19 +465,26 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>27</td>
+                    <td>42</td>
                     <td>1350 OMS Service Assurance Guide, R14.2, Issue 2</td>
                     <td>8DG43259FAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / May 22, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43259FAAA_V1_1350 OMS Service Assurance Guide R14.2 Issue 2.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">HTML </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000003304&release=14.2&sortby=Title, A-Z">None </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/8DG43259FAAA/1350OMS/R14.2/webdocs-enus/8DG43259FAAA/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
-                    <td>28</td>
+                    <td>43</td>
+                    <td>1350OMS R14.2 SP5 Issue1 HW and OS Installation Guide</td>
+                    <td>8DG 43308 BAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43308BAAA_V1_1350OMS R14.2 SP5 Issue1 HW and OS Installation Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>44</td>
                     <td>1350OMS R14.2_SP2 i1 HW and OS Installation Guide</td>
                     <td>8DG43298BAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 5, 2017</td>
@@ -364,7 +493,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>29</td>
+                    <td>45</td>
                     <td>1350OMS R14.2_SP2 i1 Installation Guide</td>
                     <td>8DG43298AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 4, 2017</td>
@@ -373,7 +502,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>30</td>
+                    <td>46</td>
                     <td>1350OMS R14.2_SP2 i1 Migration Scenarios</td>
                     <td>8DG43298CAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 5, 2017</td>
@@ -382,7 +511,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>31</td>
+                    <td>47</td>
                     <td>1350OMS R14.2_SP2 i1 Transformation</td>
                     <td>8DG43298EAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 5, 2017</td>
@@ -391,12 +520,48 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>32</td>
+                    <td>48</td>
                     <td>1350OMS R14.2_SP2 i1 Upgrade Guide</td>
                     <td>8DG43298DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Jul 5, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43298DAAA_V1_1350OMS R14.2_SP2 i1 Upgrade Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>49</td>
+                    <td>1350OMS R14.2_SP5 Issue1 Transformation</td>
+                    <td>8DG 43308 EAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 30, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43308EAAA/857869.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>50</td>
+                    <td>1350OMS R14.2_SP5 Issue2 Installation Guide</td>
+                    <td>8DG 43308 AAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/8DG43308AAAA_V1_1350OMS R14.2_SP5 Issue2 Installation Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>51</td>
+                    <td>1350OMS R14.2_SP5 Issue2 Migration Scenarios</td>
+                    <td>8DG 43308 DAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Nov 30, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43308DAAA/858908.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>52</td>
+                    <td>1350OMS R14.2_SP5 Issue2 Upgrade Guide</td>
+                    <td>8DG 43308 CAAA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 30, 2017</td>
+                    <td>
+                    <a href="https://services.support.alcatel-lucent.com/services/handoff/?path=/olcs_pdf/8DG43308CAAA/857898.pdf">PDF </a>
                     </td>
                   </tr>
                 </tbody>

@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="NokDoc">
+    <meta name="author" content="Roman Dodin">
+    <link rel="shortcut icon" href="http://cdn.rawgit.com/hellt/nokdoc/82132b04b6ff4e5281e73787a4014231c67dbdf6/template/favicon.ico">
+
+    <title>NokDoc</title>
+
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
+
+    <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        td .glyphicon {
+            font-size: 10px;
+            top: 0px
+        }
+
+        body {
+            font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
+    </style>
+    
+    <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+            <li role="presentation"><a href="http://noshut.ru/2017/01/nokdoc/">About NokDoc</a></li>
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted"><a href="https://nokdoc.github.io/">NokDoc</a></h3>
+      </div>
+      <div class="row">
+          <!-- <div class="page-header">
+            <h3>Documentation</h3>
+          </div> -->
+          <div class="col-md-12">
+              <h3>Documentation set for
+                  <code>CMG</code>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
+          <div class="col-md-12">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Doc. ID</th>
+                    <th>Issue / Date</th>
+                    <th>Links</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>7750 SR MG and CMG 9.0 AA_Protocols and Applications</td>
+                    <td>3HE 12098 AAAA TQZZA 08 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 24, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12098AAAATQZZA08/index9-0-R6/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>SR OS MG and CMG 9.0.R6 Software Release Notes</td>
+                    <td>3HE 12079 0006 TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 24, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE120790006TQZZA_V1_SR OS MG and CMG 9.0.R6 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>CMG Documentation Suite Overview R9.0.R5</td>
+                    <td>3HE 11720 AAAB TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 1, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11720AAABTQZZA02_V1_CMG Documentation Suite Overview R9.0.R5.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>7750 SR MG and CMG Zipped Collection R9.0.R5</td>
+                    <td>3HE 12250 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Nov 1, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/858066-Issue3.858066.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>7750 SR MG and CMG Software Release Notes R9.0.R5</td>
+                    <td>3HE 12079 0005 TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 19, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE120790005TQZZA_V1_7750 SR MG and CMG Software Release Notes R9.0.R5.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>CMG Appliance Installation and Setup Guide R9.0.R5</td>
+                    <td>3HE 12093 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 18, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12093AAACTQZZA01_V1_CMG Appliance Installation and Setup Guide R9.0.R5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12093AAACTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>7750 SR MG and CMG KPI-KCI Counters Guide R9.0.R5</td>
+                    <td>3HE 11716 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11716AAABTQZZA01_V1_7750 SR MG and CMG KPI-KCI Counters Guide R9.0.R5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11716AAABTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>7750 SR MG and CMG PCMD Guide R9.0.R5</td>
+                    <td>3HE 11718 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11718AAABTQZZA01_V1_7750 SR MG and CMG PCMD Guide R9.0.R5.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>7750 SR MG and CMG EPDG Guide R9.0.R5</td>
+                    <td>3HE 11713 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11713AAABTQZZA01_V1_7750 SR MG and CMG EPDG Guide R9.0.R5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11713AAABTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>7750 SR MG and CMG Multiservice Integrated Service Adapter Guide  R9.0.R5</td>
+                    <td>3HE 11715 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11715AAABTQZZA01_V1_7750 SR MG and CMG Multiservice Integrated Service Adapter Guide  R9.0.R5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11715AAABTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>7750 SR MG and CMG KPI-KCI Counters R9.0.R5  (Excel Spreadsheet and HTML bundle)</td>
+                    <td>3HE 11717 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11717AAABTQZZA01/counters.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/857436-Issue1.857436.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>7750 SR MG and CMG 9.0.R5 Infocenter - Restricted content</td>
+                    <td>7750SRMG90R5 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750SRMG90R5/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>7750 SR MG and CMG Log Events Guide R9.0.R5</td>
+                    <td>3HE 13492 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE13492AAAATQZZA01_V1_7750 SR MG and CMG Log Events Guide R9.0.R5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE13492AAAATQZZA01/html/events.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>CMG Installation Guide R9.0.R5</td>
+                    <td>3HE 11721 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11721AAABTQZZA01_V1_CMG Installation Guide R9.0.R5.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>7750 SR MG and CMG Configuration Guide  R9.0.R5</td>
+                    <td>3HE 11714 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11714AAABTQZZA01_V1_7750 SR MG and CMG Configuration Guide  R9.0.R5.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11714AAABTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>7750 SR MG and CMG 9.0.R4 Infocenter - Restricted content</td>
+                    <td>7750MGCMG90R1 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>5 / Aug 25, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750MGCMG90R1/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>CMG Appliance Installation and Setup Guide R9.0.R4</td>
+                    <td>3HE 12093 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Aug 14, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12093AAABTQZZA01_V1_CMG Appliance Installation and Setup Guide R9.0.R4.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12093AAABTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>SR OS MG and CMG 9.0.R4 Software Release Notes</td>
+                    <td>3HE 12079 0004 TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Aug 4, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE120790004TQZZA_V1_SR OS MG and CMG 9.0.R4 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>7750 SR MG and VMG 8.0 AA Protocols and Application Support</td>
+                    <td>3HE 13354 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Jul 5, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE13354AAAATQZZA01_V1_7750 SR MG and VMG 8.0 AA Protocols and Application Support.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>7750 SR MG and CMG 9.0 AA Protocols and Application Support</td>
+                    <td>3HE 13353 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Jul 5, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE13353AAAATQZZA01_V1_7750 SR MG and CMG 9.0 AA Protocols and Application Support.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>SR OS MG and CMG 9.0.R3 Software Release Notes</td>
+                    <td>3HE 12079 0003 TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jun 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE120790003TQZZA_V1_SR OS MG and CMG 9.0.R3 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>7750 SR MG and CMG Zipped Collection 9.0.R1 and 9.0.R2</td>
+                    <td>3HE 12250 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / May 4, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/847604-Issue3.847604.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>7750 SR MG and CMG 9.0.R1 KPI-KCI Counters (Excel Spreadsheet and HTML)</td>
+                    <td>3HE 11717 AAAA TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / May 4, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11717AAAATQZZA02/html/counters.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/847746-Issue3.847746.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>Cloud Mobile Gateway 9.0.R2 Installation Guide</td>
+                    <td>3HE 11721 AAAA TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / May 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11721AAAATQZZA_V1_Cloud Mobile Gateway 9.0.R2 Installation Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11721AAAATQZZA/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>CMG Appliance Installation and Setup Guide R9.0.R2</td>
+                    <td>3HE 12093 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / May 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12093AAAATQZZA01_V1_CMG Appliance Installation and Setup Guide R9.0.R2 .pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12093AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>SR OS MG and CMG 9.0.R2 Software Release Notes</td>
+                    <td>3HE 12079 0002 TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 28, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE120790002TQZZA_V1_SR OS MG and CMG 9.0.R2 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>SR OS MG and CMG 9.0.R1 Software Release Notes</td>
+                    <td>3HE 12079 0001 TQZZA 03 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 6, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE120790001TQZZA03_V1_SR OS MG and CMG 9.0.R1 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>7750 SR MG and CMG 9.0.R1 Configuration Guide</td>
+                    <td>3HE 11714 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11714AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 Configuration Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11714AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>7750 SR MG and CMG 9.0.R1 PCMD Guide</td>
+                    <td>3HE 11718 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11718AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 PCMD Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11718AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>7750 SR MG and CMG 9.0.R1 Multiservice Integrated Service Adapter Guide</td>
+                    <td>3HE 11715 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Mar 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11715AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 Multiservice Integrated Service Adapter Guide .pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11715AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td>7750 SR MG and CMG 9.0.R1 EPDG Guide</td>
+                    <td>3HE 11713 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11713AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 EPDG Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11713AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>32</td>
+                    <td>7750 SR MG and CMG 9.0.R1 KPI-KCI Counters Guide</td>
+                    <td>3HE 11716 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11716AAAATQZZA01_V1_7750 SR MG and CMG 9.0.R1 KPI-KCI Counters Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11716AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>33</td>
+                    <td>CMG 9.0.R1 Documentation Suite Overview</td>
+                    <td>3HE 11720 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11720AAAATQZZA01_V1_CMG 9.0.R1 Documentation Suite Overview.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>34</td>
+                    <td>7750 SR MG and VMG Zipped Collection R8.0.R7</td>
+                    <td>3HE 11034 AAAB TQZZA 03 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 23, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/841525-Issue1.841525.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>35</td>
+                    <td>7750 SR MG 8.0 and VMG 8.0 Infocenter - Restricted content</td>
+                    <td>7750SRMG80R7 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>6 / Mar 23, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750SRMG80R7/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td>Virtualized Mobile Gateway 8.0.R7 Installation Guide</td>
+                    <td>3HE 11056 AAAB TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Mar 22, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11056AAABTQZZA02_V1_Virtualized Mobile Gateway 8.0.R7 Installation Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11056AAABTQZZA02/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>SR OS MG 8.0.R11 Software Release Notes</td>
+                    <td>3HE 10514 0016 TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 17, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140016TQZZA_V1_SR OS MG 8.0.R11 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>7750_SR_MG_and_VMG_8.0.R10_Software_Release_Notes</td>
+                    <td>3HE 10514 0015 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Feb 17, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140015TQZZA02_V1_7750_SR_MG_and_VMG_8.0.R10_Software_Release_Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>39</td>
+                    <td>7750 SR MG and VMG 8.0.R7 KPI-KCI Counters (Excel Spreadsheet)</td>
+                    <td>3HE 10512 AAAC TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Jan 27, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10512AAACTQZZA02/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>40</td>
+                    <td>SR OS MG 8.0.R9 Software Release Notes</td>
+                    <td>3HE 10514 0014 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jan 23, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140014TQZZA01_V1_SR OS MG 8.0.R9 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>41</td>
+                    <td>7750 SR MG and VMG 8.0.R7 Configuration Guide</td>
+                    <td>3HE 10509 AAAC TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Dec 12, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10509AAACTQZZA02_V1_7750 SR MG and VMG 8.0.R7 Configuration Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10509AAACTQZZA02/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>42</td>
+                    <td>SR OS MG 8.0.R4-5 Software Release Notes</td>
+                    <td>3HE 10514 0013 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 10, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140013TQZZA01_V1_SR OS MG 8.0.R4-5 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>43</td>
+                    <td>SR OS MG 8.0.R8 Software Release Notes</td>
+                    <td>3HE 10514 0012 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 1, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140012TQZZA02_V1_SR OS MG 8.0.R8 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>44</td>
+                    <td>SR OS MG 7.0.R16 Software Release Notes</td>
+                    <td>3HE 09880 0016 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 17, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800016TQZZA01_V1_SR OS MG 7.0.R16 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>45</td>
+                    <td>SR_OS_MG_and_VMG_7.0_AA_Protocols_and_Applications</td>
+                    <td>3HE 10508 AAAA TQZZA 10 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 17, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10508AAAATQZZA10/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>46</td>
+                    <td>SR OS MG 8.0.R4-4 Software Release Notes</td>
+                    <td>3HE 10514 0011 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 9, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140011TQZZA01_V1_SR OS MG 8.0.R4-4 Software Release Notes .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>47</td>
+                    <td>SR OS MG 8.0.R7 Software Release Notes</td>
+                    <td>3HE 10514 0010 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>3 / Nov 3, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140010TQZZA01_V1_SR OS MG 8.0.R7 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>48</td>
+                    <td>7750 SR MG and VMG 8.0.R7 Configuration Guide</td>
+                    <td>3HE 10509 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>4 / Oct 27, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10509AAACTQZZA01_V1_7750 SR MG and VMG 8.0.R7 Configuration Guide   .pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10509AAACTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>49</td>
+                    <td>7750 SR MG and VMG 8.0.R7 KPI-KCI Counters Guide</td>
+                    <td>3HE 10511 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 27, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10511AAACTQZZA01_V1_7750 SR MG and VMG 8.0.R7 KPI-KCI Counters Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10511AAACTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>50</td>
+                    <td>VMG 8.0.R7 Documentation Suite Overview</td>
+                    <td>3HE 10955 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 27, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10955AAABTQZZA01_V1_VMG 8.0.R7 Documentation Suite Overview.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>51</td>
+                    <td>7750 SR MG and VMG 8.0.R7 Multiservice Integrated Service Adapter Guide</td>
+                    <td>3HE 10510 AAAC TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 27, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10510AAACTQZZA01_V1_7750 SR MG and VMG 8.0.R7 Multiservice Integrated Service Adapter Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10510AAACTQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>52</td>
+                    <td>7750 SR MG and VMG 8.0.R7 PCMD Guide</td>
+                    <td>3HE 11195 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 27, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11195AAABTQZZA01_V1_7750 SR MG and VMG 8.0.R7 PCMD Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11195AAABTQZZA01/index_frame.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>53</td>
+                    <td>SR OS MG 8.0.R4-3 Software Release Notes</td>
+                    <td>3HE 10514 0009 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 23, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140009TQZZA01_V1_SR OS MG 8.0.R4-3 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54</td>
+                    <td>SR OS MG 7.0.R15 Software Release Notes</td>
+                    <td>3HE 09880 0015 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 8, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800015TQZZA01_V1_SR OS MG 7.0.R15 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>55</td>
+                    <td>SR OS MG 8.0.R4-2 Software Release Notes</td>
+                    <td>3HE 10514 0008 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 2, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140008TQZZA01_V1_SR OS MG 8.0.R4-2 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>56</td>
+                    <td>SR OS MG 8.0.R4-1 Software Release Notes</td>
+                    <td>3HE 10514 0007 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Aug 11, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140007TQZZA01_V1_SR OS MG 8.0.R4-1 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>57</td>
+                    <td>SR OS MG 7.0.R14 Software Release Notes</td>
+                    <td>3HE 09880 0014 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jul 20, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800014TQZZA01_V1_SR OS MG 7.0.R14 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>58</td>
+                    <td>Virtualized Mobile Gateway Installation Guide 8.0.R3</td>
+                    <td>3HE 11056 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jul 7, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11056AAAATQZZA01_V1_Virtualized Mobile Gateway Installation Guide 8.0.R3.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11056AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>59</td>
+                    <td>SR OS MG 8.0.R4 Software Release Notes</td>
+                    <td>3HE 10514 0006 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jul 3, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140006TQZZA01_V1_SR OS MG 8.0.R4 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>60</td>
+                    <td>7750 SR MG and VMG 8.0.R3-2 PCMD Guide</td>
+                    <td>3HE 11195 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jun 29, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE11195AAAATQZZA01_V1_7750 SR MG and VMG 8.0.R3-2 PCMD Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE11195AAAATQZZA01/index_frame.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>61</td>
+                    <td>SR OS MG 8.0.R3-2 Software Release Notes</td>
+                    <td>3HE 10514 0005 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jun 15, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140005TQZZA01_V1_SR OS MG 8.0.R3-2 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>62</td>
+                    <td>Virtualized Mobile Gateway Documentation Overview</td>
+                    <td>3HE 10955 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / May 12, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10955AAAATQZZA01_V1_Virtualized Mobile Gateway Documentation Overview.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>63</td>
+                    <td>7750 SR MG and VMG Zipped Collection R8.0.R3</td>
+                    <td>3HE 11034 AAAA TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / May 12, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/824147-Issue2.824147.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>64</td>
+                    <td>7750 SR MG and VMG KPI-KCI-SGW-PGW-GGSN-SAEGW-ePDG-TWAG-SSG-counters-8.0R1</td>
+                    <td>3HE 10512 AAAA TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / May 5, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10512AAAATQZZA02/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>65</td>
+                    <td>7750 SR MG and VMG KPI-KCI-SGW-PGW-GGSN-SAEGW-ePDG-TWAG-SSG-counters-8.0R3</td>
+                    <td>3HE 10512 AAAB TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / May 5, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10512AAABTQZZA02/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>66</td>
+                    <td>7750 SR MG and VMG KPI-KCI-SGW-PGW-GGSN-SAEGW-ePDG-TWAG-SSG-counters-7.0R9</td>
+                    <td>3HE 10669 AAAA TQZZA 03 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / May 5, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10669AAAATQZZA03/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>67</td>
+                    <td>SR OS MG 7.0.R13 Software Release Notes</td>
+                    <td>3HE 09880 0013 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / May 4, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800013TQZZA01_V1_SR OS MG 7.0.R13 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>68</td>
+                    <td>7750 SR MG and VMG 8.0.R3 KPI-KCI Counters Guide</td>
+                    <td>3HE 10511 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 29, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10511AAABTQZZA01_V1_7750 SR MG and VMG 8.0.R3 KPI-KCI Counters Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>69</td>
+                    <td>SR OS MG 8.0.R3 Software Release Notes</td>
+                    <td>3HE 10514 0003 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 26, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140003TQZZA01_V1_SR OS MG 8.0.R3 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>70</td>
+                    <td>7750 SR MG and VMG 8.0.R3 Configuration Guide</td>
+                    <td>3HE 10509 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 15, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10509AAABTQZZA01_V1_7750 SR MG and VMG 8.0.R3 Configuration Guide   .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>71</td>
+                    <td>7750 SR MG and VMG 8.0.R3 Multiservice Integrated Service Adapter Guide</td>
+                    <td>3HE 10510 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 15, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10510AAABTQZZA01_V1_7750 SR MG and VMG 8.0.R3 Multiservice Integrated Service Adapter Guide .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>72</td>
+                    <td>SR OS MG 7.0.R12 Software Release Notes</td>
+                    <td>3HE 09880 0012 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Apr 1, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800012TQZZA01_V1_SR OS MG 7.0.R12 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>73</td>
+                    <td>SR OS MG 7.0.R11 Software Release Notes</td>
+                    <td>3HE 09880 0011 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800011TQZZA01_V1_SR OS MG 7.0.R11 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>74</td>
+                    <td>7750 SR MG and VMG 8.0.R1 Configuration Guide</td>
+                    <td>3HE 10509 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Mar 1, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10509AAAATQZZA01_V1_7750 SR MG and VMG 8.0.R1 Configuration Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>75</td>
+                    <td>SR OS MG 7.0.R10 Software Release Notes</td>
+                    <td>3HE 09880 0010 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Feb 22, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800010TQZZA01_V1_SR OS MG 7.0.R10 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>76</td>
+                    <td>SR OS MG 8.0.R2 Software Release Notes</td>
+                    <td>3HE 10514 0002 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Feb 1, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140002TQZZA01_V1_SR OS MG 8.0.R2 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>77</td>
+                    <td>7750 SR MG and VMG 8.0.R1 KPI-KCI Counters Guide</td>
+                    <td>3HE 10511 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jan 14, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10511AAAATQZZA01_V1_7750 SR MG and VMG 8.0.R1 KPI-KCI Counters Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>78</td>
+                    <td>SR OS MG 7.0.R9 Software Release Notes</td>
+                    <td>3HE 09880 0009 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Jan 11, 2016</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800009TQZZA01_V1_SR OS MG 7.0.R9 Software Release Notes .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>79</td>
+                    <td>SR OS MG 8.0.R1 Software Release Notes</td>
+                    <td>3HE 10514 0001 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 22, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE105140001TQZZA01_V1_SR OS MG 8.0.R1 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>80</td>
+                    <td>7750 SR MG and VMG 8.0.R1 Multiservice Integrated Service Adapter Guide</td>
+                    <td>3HE 10510 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 17, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10510AAAATQZZA01_V1_7750 SR MG and VMG 8.0.R1 Multiservice Integrated Service Adapter Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>81</td>
+                    <td>SR OS MG 7.0.R8 Software Release Notes</td>
+                    <td>3HE 09880 0008 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 10, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800008TQZZA01_V1_SR OS MG 7.0.R8 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>82</td>
+                    <td>SR OS MG 7.0.R7 Software Release Notes</td>
+                    <td>3HE 09880 0007 TQZZA 02 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 5, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800007TQZZA02_V1_SR OS MG 7.0.R7 Software Release Notes .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>83</td>
+                    <td>SR OS MG 7.0.R6 Software Release Notes</td>
+                    <td>3HE 09880 0006 TQZZA EDITION01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 2, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800006TQZZAEDITION01_V1_SR OS MG 7.0.R6 Software Release Notes .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>84</td>
+                    <td>SR MG 7.0.R5 KPI-KCI Counters Guide</td>
+                    <td>3HE 09794 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 22, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE09794AAABTQZZA01_V1_SR MG 7.0.R5 KPI-KCI Counters Guide .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>85</td>
+                    <td>SR OS MG 7.0.R5 Software Release Notes</td>
+                    <td>3HE 09880 0005 TQZZA EDITION01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 3, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE098800005TQZZAEDITION01_V1_SR OS MG 7.0.R5 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>86</td>
+                    <td>SR MG 7.0.R5 Configuration Guide</td>
+                    <td>3HE 09792 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Sep 2, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE09792AAABTQZZA01_V1_SR MG 7.0.R5 Configuration Guide .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>87</td>
+                    <td>SR MG 7.0.R5 Multiservice Integrated Service Adapter Guide</td>
+                    <td>3HE 09793 AAAB TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Sep 2, 2015</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE09793AAABTQZZA01_V1_SR MG 7.0.R5 Multiservice Integrated Service Adapter Guide .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>88</td>
+                    <td>SR OS 12.0.R4 Software Release Notes</td>
+                    <td>93-0539-04 V12.0.R4 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Aug 6, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/93053904V12.0.R4_V1_SR OS 12.0.R4 Software Release Notes.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>89</td>
+                    <td>7750 SR OS Router Configuration Guide 12.0.R4</td>
+                    <td>93-0073-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300731102_V1_7750 SR OS Router Configuration Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>90</td>
+                    <td>7750 SR OS Interface Configuration Guide 12.0.R4</td>
+                    <td>93-0072-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300721102_V1_7750 SR OS Interface Configuration Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>91</td>
+                    <td>7750 SR OS MPLS Guide 12.0.R4</td>
+                    <td>93-0075-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300751102_V1_7750 SR OS MPLS Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>92</td>
+                    <td>7750 SR OS Routing Protocols Guide 12.0.R4</td>
+                    <td>93-0074-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300741102_V1_7750 SR OS Routing Protocols Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>93</td>
+                    <td>7750 SR OS Quality of Service Guide 12.0.R4</td>
+                    <td>93-0077-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300771102_V1_7750 SR OS Quality of Service Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>94</td>
+                    <td>7750 SR OS Basic System Configuration Guide 12.0.R4</td>
+                    <td>93-0070-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300701102_V1_7750 SR OS Basic System Configuration Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>95</td>
+                    <td>7750 SR OS System Management Guide 12.0.R4</td>
+                    <td>93-0071-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300711102_V1_7750 SR OS System Management Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>96</td>
+                    <td>7750 SR OS Services Guide 12.0.R4</td>
+                    <td>93-0076-11-02 </td>
+                    <td>1 / Jul 30, 2014</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/9300761102_V1_7750 SR OS Services Guide 12.0.R4.pdf">PDF </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+      </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="https://www.linkedin.com/in/rdodin">Roman Dodin</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>

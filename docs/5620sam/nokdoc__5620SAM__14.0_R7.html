@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>5620SAM</code>
                   release <code>14.0 R7</code>
-                  <small>generated on 2017/11/30</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -84,7 +97,7 @@
                     <td>5620SAM140R7 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>3 / May 26, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/5620SAM140R7/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -167,7 +180,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10682AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Analytics Report Catalog.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10682AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -177,7 +190,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10683AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Application API Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10683AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -197,7 +210,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10686AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Documentation Map.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10686AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -226,7 +239,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10688AAAETQZZA01_V1_5620 SAM Release 14.0 R7 HDM Adaptation Kit User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10688AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -256,7 +269,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10691AAAETQZZA01_V1_5620 SAM Release 14.0 R7 LTE EPC User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10691AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -266,7 +279,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10692AAAETQZZA01_V1_5620 SAM Release 14.0 R7 LTE RAN User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10692AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -345,7 +358,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10700AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Release Description.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10700AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -363,7 +376,7 @@
                     <td>3HE 11586 AAAB TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>2 / Jan 18, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/SAM140R7_REST_API_postmanCollectionFiles-Issue2.837599.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -373,7 +386,7 @@
                     <td>1 / May 26, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10701AAAETQZZA02_V1_5620 SAM Release 14.0 R7 SCMS Migration Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10701AAAETQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -383,7 +396,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10702AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Scripts and Templates Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10702AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -393,7 +406,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10703AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Small Cells User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10703AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -453,7 +466,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10712AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Wireless OSS Interface Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10712AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -463,7 +476,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10713AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Wireless Parameter Reference.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10713AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -473,7 +486,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10714AAAETQZZA01_V1_5620 SAM Release 14.0 R7 Wireless Release Description.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10714AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -483,7 +496,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10715AAAETQZZA01_V1_5620 SAM Release 14.0 R7 XML OSS Interface Developer Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10715AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -492,7 +505,7 @@
                     <td>3HE 10716 AAAE TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Dec 14, 2016</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">ZIP </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/5620SAM_14_0_R7_SAM-O-Issue1.835834.zip">ZIP </a>
                     </td>
                   </tr>
                   <tr>
@@ -511,7 +524,7 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10841AAAETQZZA01_V1_5650 CPAM Release 10.0 R7 Release Description.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10841AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -521,38 +534,29 @@
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10840AAAETQZZA01_V1_5650 CPAM Release 10.0 R7 User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10840AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>48</td>
-                    <td>NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 6</td>
-                    <td>3HE 10374 AAAB TQZZA 09 </td>
-                    <td>1 / Nov 29, 2017</td>
+                    <td>NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 7</td>
+                    <td>3HE 10374 AAAC TQZZA 10 </td>
+                    <td>1 / Dec 13, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE10374AAABTQZZA09_V1_NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 6.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE10374AAACTQZZA10_V1_NSP NFM-P and 5620 SAM GNE Driver Compatibility Guide 3HE-10374-AAAC-TQZZA Issue 7.pdf">PDF </a>
                     </td>
                   </tr>
                   <tr>
                     <td>49</td>
                     <td>NSP NFM-P and 5620 SAM Network Element Compatibility Guide (5620 SAM Releases 12.0 and later)</td>
                     <td>3HE 12278 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
-                    <td>17 / Nov 29, 2017</td>
+                    <td>18 / Dec 13, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12278AAAATQZZA01_V1_NSP NFM-P and 5620 SAM Network Element Compatibility Guide (5620 SAM Releases 12.0 and later).pdf">PDF </a>
                     </td>
                   </tr>
                   <tr>
                     <td>50</td>
-                    <td>NSP NFM-P GNE Driver Compatibility Guide Issue 5</td>
-                    <td>3HE 10374 AAAC TQZZA 05 </td>
-                    <td>1 / Sep 27, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE10374AAACTQZZA05_V1_NSP NFM-P GNE Driver Compatibility Guide Issue 5.pdf">PDF </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>51</td>
                     <td>NSP NFM-P GNE Driver Installation Guide</td>
                     <td>3HE 10288 AAAC TQZZA 01 </td>
                     <td>1 / Mar 29, 2017</td>
@@ -561,7 +565,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>52</td>
+                    <td>51</td>
                     <td>NSP NFM-P MPTGS Driver v2.2.0 Guide Issue 2</td>
                     <td>3HE 10851 AAAC TQZZA 02 </td>
                     <td>1 / Jun 28, 2017</td>
@@ -570,7 +574,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>53</td>
+                    <td>52</td>
                     <td>NSP NFM-P Multi-Vendor Policy Guide Issue 2</td>
                     <td>3HE 11236 AAAB TQZZA 02 </td>
                     <td>1 / Sep 27, 2017</td>
@@ -579,13 +583,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>54</td>
+                    <td>53</td>
                     <td>VSAP 14.0 R7 User Guide</td>
                     <td>3HE 10709 AAAE TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
                     <td>1 / Dec 14, 2016</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE10709AAAETQZZA01_V1_VSAP 14.0 R7 User Guide.pdf">PDF </a>
-                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/au_doc_list.pl?entry_id=1-0000000002372&release=14.0 R7&sortby=Title, A-Z">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE10709AAAETQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                 </tbody>

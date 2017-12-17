@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>7210SAS</code>
                   release <code>9.0R8</code>
-                  <small>generated on 2017/11/30</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -71,6 +84,15 @@
                 <tbody>
                   <tr>
                     <td>1</td>
+                    <td>7210 SAS D E K2F2T1C K2F4T6C OS Services Guide</td>
+                    <td>3HE11478AAAJTQZZA </td>
+                    <td>2 / Dec 6, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11478AAAJTQZZA_V1_7210 SAS D E K2F2T1C K2F4T6C OS Services Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
                     <td>7210 SAS D, E OS Routing Protocols Guide</td>
                     <td>3HE 11490 AAAJ TQZZA 01 </td>
                     <td>1 / Nov 7, 2017</td>
@@ -79,7 +101,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2</td>
+                    <td>3</td>
                     <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS Basic System Configuration Guide</td>
                     <td>3HE11486AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -88,7 +110,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>3</td>
+                    <td>4</td>
                     <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS Interface Configuration Guide</td>
                     <td>3HE11484AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -97,7 +119,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>4</td>
+                    <td>5</td>
                     <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS OAM and Diagnostics Guide</td>
                     <td>3HE11492AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -106,7 +128,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>5</td>
+                    <td>6</td>
                     <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS Router Configuration Guide</td>
                     <td>3HE11494AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -115,25 +137,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>6</td>
-                    <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS Services Guide</td>
-                    <td>3HE11478AAAHTQZZA </td>
-                    <td>1 / Sep 22, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11478AAAHTQZZA_V1_7210 SAS D E K2F2T1C K2F4T6C OS Services Guide.pdf">PDF </a>
-                    </td>
-                  </tr>
-                  <tr>
                     <td>7</td>
-                    <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS Services Guide</td>
-                    <td>3HE11478AAAJTQZZA </td>
-                    <td>1 / Nov 29, 2017</td>
-                    <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE11478AAAJTQZZA_V1_7210 SAS D E K2F2T1C K2F4T6C OS Services Guide.pdf">PDF </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
                     <td>7210 SAS D, E, K2F2T1C, K2F4T6C OS System Management Guide</td>
                     <td>3HE11488AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -142,7 +146,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>9</td>
+                    <td>8</td>
                     <td>7210 SAS K2F2T1C,  K2F4T6C OS Quality of Service Guide</td>
                     <td>3HE 12057 AAAJ TQZZA 01 </td>
                     <td>1 / Nov 7, 2017</td>
@@ -151,7 +155,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>10</td>
+                    <td>9</td>
                     <td>7210 SAS M, T, Mxp, Sx, S OS Quality of Service Guide</td>
                     <td>3HE11482AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -160,7 +164,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>11</td>
+                    <td>10</td>
                     <td>7210 SAS M, T, Mxp, Sx, S OS Services Guide</td>
                     <td>3HE11479AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -169,7 +173,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>12</td>
+                    <td>11</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OAM and Diagnostics Guide</td>
                     <td>3HE11493AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -178,7 +182,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>13</td>
+                    <td>12</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OS Basic System Configuration Guide</td>
                     <td>3HE11487AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -187,7 +191,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>14</td>
+                    <td>13</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OS Interface Configuration Guide</td>
                     <td>3HE11485AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -196,7 +200,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>15</td>
+                    <td>14</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OS MPLS Guide</td>
                     <td>3HE11496AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -205,7 +209,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>16</td>
+                    <td>15</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OS Router Configuration Guide</td>
                     <td>3HE11495AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -214,7 +218,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>17</td>
+                    <td>16</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OS Routing Protocols Guide</td>
                     <td>3HE11491AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -223,7 +227,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>18</td>
+                    <td>17</td>
                     <td>7210 SAS M, T, X, R6, R12, Mxp, Sx, S OS System Management Guide</td>
                     <td>3HE11489AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -232,7 +236,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>19</td>
+                    <td>18</td>
                     <td>7210 SAS OS Software Release Notes</td>
                     <td>3HE11497AAAHTQZZA </td>
                     <td>2 / Aug 24, 2017</td>
@@ -241,7 +245,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>20</td>
+                    <td>19</td>
                     <td>7210 SAS X, R6, R12 OS Services Guide</td>
                     <td>3HE11480AAAHTQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -250,7 +254,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>21</td>
+                    <td>20</td>
                     <td>7210 SAS-K2F4T6C OS MPLS Guide</td>
                     <td>3HE12059AAAETQZZA </td>
                     <td>1 / Sep 22, 2017</td>
@@ -259,7 +263,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>22</td>
+                    <td>21</td>
                     <td>7210 SAS-K2F4T6C OS Routing Protocols Guide</td>
                     <td>3HE12058AAAETQZZA </td>
                     <td>1 / Sep 22, 2017</td>

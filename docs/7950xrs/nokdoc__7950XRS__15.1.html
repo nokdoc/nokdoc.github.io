@@ -11,6 +11,10 @@
 
     <title>NokDoc</title>
 
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,7 +22,7 @@
     <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
 
     <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
-    <link href="/static/css/docset1.css" rel="stylesheet" type="text/css" />
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         td .glyphicon {
@@ -29,10 +33,16 @@
         body {
             font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
         }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
     </style>
     
     <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
-    <script src="/static/scripts/nokdoc_common.js"></script>
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
   </head>
 
   <body>
@@ -56,7 +66,10 @@
               <h3>Documentation set for
                   <code>7950XRS</code>
                   release <code>15.1</code>
-                  <small>generated on 2017/12/01</small></h3></div>
+                  <small>generated on 2017/12/17</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
           <div class="col-md-12">
               <table class="table table-striped">
                 <thead>
@@ -76,6 +89,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13627AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Acronyms Reference Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13627AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -85,6 +99,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13628AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Basic System Configuration Guide 15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13628AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -94,6 +109,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13630AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Interface Configuration Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13630AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -103,6 +119,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13632AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Layer 2 Services and EVPN Guide: VLL VPLS PBB and EVPN R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13632AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -112,6 +129,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13633AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Layer 3 Services Guide: IESs and VPRN Services R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13633AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -121,6 +139,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13634AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Log Events Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13634AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -130,6 +149,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13635AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR MPLS Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13635AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -139,6 +159,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13636AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Multicast Routing Protocols Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13636AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -148,6 +169,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13638AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR OAM and Diagnostics Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13638AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -157,6 +179,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13639AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Quality of Service Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13639AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -166,6 +189,7 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13641AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Router Configuration Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13641AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
@@ -175,33 +199,81 @@
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13642AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Services Overview Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13642AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>13</td>
                     <td>7450 ESS, 7750 SR, 7950 XRS, and VSR System Management Guide R15.1.R1</td>
-                    <td>3HE 13643 AAAA TQZZA 01 </td>
+                    <td>3HE 13643 AAAA TQZZA 02 </td>
                     <td>1 / Nov 30, 2017</td>
                     <td>
-                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13643AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR System Management Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13643AAAATQZZA02_V1_7450 ESS 7750 SR 7950 XRS and VSR System Management Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13643AAAATQZZA02/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>14</td>
                     <td>7450 ESS, 7750 SR, 7950 XRS, and VSR Unicast Routing Protocols Guide R15.1.R1</td>
                     <td>3HE 13645 AAAA TQZZA 01 </td>
-                    <td>1 / Nov 30, 2017</td>
+                    <td>2 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13645AAAATQZZA01_V1_7450 ESS 7750 SR 7950 XRS and VSR Unicast Routing Protocols Guide R15.1.R1.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE13645AAAATQZZA01/index.html">HTML </a>
                     </td>
                   </tr>
                   <tr>
                     <td>15</td>
+                    <td>7450 ESS, 7750 SR, 7950 XRS, and VSR Zipped Collection R15.1.R1</td>
+                    <td>3HE 13646 AAAA TQZZA 01 </td>
+                    <td>2 / Nov 30, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/archive/859134-Issue2.859134.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>7450 ESS, 7750 SR, and 7950 XRS 15.1 Infocenter</td>
+                    <td>7750SR151R1A </td>
+                    <td>1 / Dec 14, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/7750SR151R1A/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>7450 ESS, 7750 SR, and 7950 XRS 15.1 Infocenter - Restricted Content</td>
+                    <td>7750SR151R1 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 14, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7750SR151R1/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
                     <td>7450 ESS, 7750 SR, and 7950 XRS Documentation Suite Overview Card R15.1.R1</td>
                     <td>3HE 13629 AAAA TQZZA 01 </td>
                     <td>1 / Nov 30, 2017</td>
                     <td>
                     <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13629AAAATQZZA01_V1_7450 ESS 7750 SR and 7950 XRS Documentation Suite Overview Card R15.1.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>SR OS 15.1 AA Protocols and Applications</td>
+                    <td>3HE 13723 0000 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 8, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE137230000TQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>SR OS 15.1.R1-1 Software Release Notes</td>
+                    <td>3HE 13648 0001 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Dec 8, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE136480001TQZZA01_V1_SR OS 15.1.R1-1 Software Release Notes.pdf">PDF </a>
                     </td>
                   </tr>
                 </tbody>
