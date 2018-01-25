@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="NokDoc">
+    <meta name="author" content="Roman Dodin">
+    <link rel="shortcut icon" href="http://cdn.rawgit.com/hellt/nokdoc/82132b04b6ff4e5281e73787a4014231c67dbdf6/template/favicon.ico">
+
+    <title>NokDoc</title>
+
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
+
+    <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        td .glyphicon {
+            font-size: 10px;
+            top: 0px
+        }
+
+        body {
+            font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
+    </style>
+    
+    <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+            <li role="presentation"><a href="http://noshut.ru/2017/01/nokdoc/">About NokDoc</a></li>
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted"><a href="https://nokdoc.github.io/">NokDoc</a></h3>
+      </div>
+      <div class="row">
+          <!-- <div class="page-header">
+            <h3>Documentation</h3>
+          </div> -->
+          <div class="col-md-12">
+              <h3>Documentation set for
+                  <code>7210IXR</code>
+                  <small>generated on 2018/01/25</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
+          <div class="col-md-12">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Doc. ID</th>
+                    <th>Issue / Date</th>
+                    <th>Links</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>7250 IXR OS R13.1.R2 Release Note</td>
+                    <td>3HE 13544 0002 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Nov 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE135440002TQZZA01_V1_7250 IXR OS R13.1.R2 Release Note .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>7250 IXR-6 and 7250 IXR-10 Chassis Installation Guide - Restricted Content</td>
+                    <td>3HE 12247 AAAA TQZZA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 16, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12247AAAATQZZA_V1_7250 IXR-6 and 7250 IXR-10 Chassis Installation Guide - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12247AAAATQZZA/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>13.1.R1 IXR OS Software Release Notice - Restricted Content</td>
+                    <td>3HE 13544 0001 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE135440001TQZZA01_V1_13.1.R1 IXR OS Software Release Notice - Restricted Content.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>7250 IXR Software Guides Zipped Collection 13.1.R1 - Restricted Content</td>
+                    <td>3HE 13545 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/archive/856673-Issue1.856673.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>7250 IXR MPLS Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12238 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12238AAAATQZZA01_V1_7250 IXR MPLS Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12238AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>7250 IXR Quality of Service Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12240 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12240AAAATQZZA01_V1_7250 IXR Quality of Service Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12240AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>7250 IXR Services Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12243 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12243AAAATQZZA01_V1_7250 IXR Services Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12243AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>7250 IXR Router Configuration Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12241 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12241AAAATQZZA01_V1_7250 IXR Router Configuration Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12241AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>7250 IXR Routing Protocols Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12242 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12242AAAATQZZA01_V1_7250 IXR Routing Protocols Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12242AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>7250 IXR Interface Configuration Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12237 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12237AAAATQZZA01_V1_7250 IXR Interface Configuration Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12237AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>7250 IXR Basic System Configuration Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12236 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12236AAAATQZZA01_V1_7250 IXR Basic System Configuration Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12236AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>7250 IXR OAM and Diagnostics Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12239 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12239AAAATQZZA01_V1_7250 IXR OAM and Diagnostics Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12239AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>7250 IXR System Management Guide 13.1.R1 - Restricted Content</td>
+                    <td>3HE 12244 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE12244AAAATQZZA01_V1_7250 IXR System Management Guide 13.1.R1 - Restricted Content.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE12244AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>7250 IXR 13.1 Infocenter - Restricted content</td>
+                    <td>7250IXR131 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Sep 29, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/7250IXR131/index.html">HTML </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+      </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="https://www.linkedin.com/in/rdodin">Roman Dodin</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>

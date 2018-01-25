@@ -1,51 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Roman Dodin">
-    <link rel="shortcut icon" href="static/favicon.ico">
 
-    <title>NokDoc Centraal</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="Roman Dodin">
+  <link rel="shortcut icon" href="static/favicon.ico">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>NokDoc Centraal</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
 
 
-    <!-- Custom styles for this template -->
-    <style>
+  <!-- Custom styles for this template -->
+  <style>
     /* Move down content because we have a fixed navbar that is 50px tall */
-      body {
-        padding-top: 50px;
-        padding-bottom: 20px;
-        font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif;
-      }
 
-      .navbar-inverse {
-        background-color: #124191;
-        border-style: none;
-      }
-      .navbar-inverse .navbar-brand {
-        color: #ffffff;
-        font-family: "Nokia Pure Headline","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: x-large;
-        font-weight: lighter;
-      }
+    body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font-family: "Nokia Pure Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
 
-      .jumbotron {
-        background-color: #E1E1E4
-      }
+    .navbar-inverse {
+      background-color: #124191;
+      border-style: none;
+    }
 
-      .jumbotron p {
-        color: #4C4B5E
-      }
-    </style>
+    .navbar-inverse .navbar-brand {
+      color: #ffffff;
+      font-family: "Nokia Pure Headline", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: x-large;
+      font-weight: lighter;
+    }
 
-    <!-- <script>
+    .jumbotron {
+      background-color: #E1E1E4
+    }
+
+    .jumbotron p {
+      color: #4C4B5E
+    }
+  </style>
+
+  <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -54,24 +57,25 @@
       ga('create', 'UA-90965544-1', 'auto');
       ga('send', 'pageview');
     </script> -->
-    <!-- Google Analytics -->
-    <script src="static/scripts/nokdoc_common.js"></script>
-  </head>
+  <!-- Google Analytics -->
+  <script src="static/scripts/nokdoc_common.js"></script>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button> -->
-          <a class="navbar-brand" href="#"><strong>NokDoc</strong> Lib</a>
-        </div>
-        <!-- <div id="navbar" class="navbar-collapse collapse">
+        <a class="navbar-brand" href="#">
+          <strong>NokDoc</strong> Lib</a>
+      </div>
+      <!-- <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
@@ -82,289 +86,404 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
         </div> -->
-      </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <!-- <h2>NokDoc</h2> -->
-        <p>The goal of the <a href="http://noshut.ru/2017/01/nokdoc/">NokDoc</a> project is to make Nokia ION products' documentation easy to access.
-          <br>Choose a specific product release below to get the full list of available docs.</p>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <!-- <h2>NokDoc</h2> -->
+      <p>The goal of the
+        <a href="http://noshut.ru/2017/01/nokdoc/">NokDoc</a> project is to make Nokia ION products' documentation easy to access.
+        <br>Choose a specific product release below to get the full list of available docs.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Nuage
+          <small>VCS + VNS</small>
+        </h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/nuage/nokdoc__NUAGE__5.2.1.html" role="button" class="btn btn-default">5.2.1</a>
+          <a href="docs/nuage/nokdoc__NUAGE__5.1.2.html" role="button" class="btn btn-default">5.1.2</a>
+          <a href="docs/nuage/nokdoc__NUAGE__5.1.1_U2.html" role="button" class="btn btn-default">5.1.1U2</a>
+          <a href="docs/nuage/nokdoc__NUAGE.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__5.1.1.html">5.1.1</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__5.0.2.html">5.0.2</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__5.0.1.html">5.0.1</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R11.html">4.0.R11</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R10.html">4.0.R10</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R9.html">4.0.R9</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R8.html">4.0.R8</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R7.html">4.0.R7</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R6.2.html">4.0.R6.2</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R6.1.html">4.0.R6.1</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R6.html">4.0.R6</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R5.html">4.0.R5</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__4.0.R4.html">4.0.R4</a>
+              </li>
+              <li>
+                <a href="docs/nuage/nokdoc__NUAGE__3.2.R10.html">3.2.R10</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>VSR</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/vsr/nokdoc__VSR__15.1.html" role="button" class="btn btn-default">15.1</a>
+          <a href="docs/vsr/nokdoc__VSR__15.0.html" role="button" class="btn btn-default">15.0</a>
+          <a href="docs/vsr/nokdoc__VSR__14.0.html" role="button" class="btn btn-default">14.0</a>
+          <a href="docs/vsr/nokdoc__VSR.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/vsr/nokdoc__VSR__13.0.html">13.0</a>
+              </li>
+              <li>
+                <a href="docs/vsr/nokdoc__VSR__12.0.html">12.0</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>7850 VSG</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <!-- <a href="docs/210wbx_7850/nokdoc__210WBX.html" role="button" class="btn btn-default">210 WBX</a> -->
+          <a href="docs/210wbx_7850/nokdoc__7850VSG.html" role="button" class="btn btn-default">7850 VSG</a>
+          <a href="docs/210wbx_7850/nokdoc__7850-8VSG.html" role="button" class="btn btn-default">7850-8 VSG</a>
+          <a href="docs/210wbx_7850/nokdoc__7850VSA.html" role="button" class="btn btn-default">7850 VSA</a>
+        </div>
       </div>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Nuage <small>VCS + VNS</small></h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/nuage/nokdoc__NUAGE__5.2.1.html" role="button" class="btn btn-default">5.2.1</a>
-            <a href="docs/nuage/nokdoc__NUAGE__5.1.2.html" role="button" class="btn btn-default">5.1.2</a>
-            <a href="docs/nuage/nokdoc__NUAGE__5.1.1_U2.html" role="button" class="btn btn-default">5.1.1U2</a>
-            <a href="docs/nuage/nokdoc__NUAGE.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/nuage/nokdoc__NUAGE__5.1.1.html">5.1.1</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__5.0.2.html">5.0.2</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__5.0.1.html">5.0.1</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R11.html">4.0.R11</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R10.html">4.0.R10</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R9.html">4.0.R9</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R8.html">4.0.R8</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R7.html">4.0.R7</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R6.2.html">4.0.R6.2</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R6.1.html">4.0.R6.1</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R6.html">4.0.R6</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R5.html">4.0.R5</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__4.0.R4.html">4.0.R4</a></li>
-                <li><a href="docs/nuage/nokdoc__NUAGE__3.2.R10.html">3.2.R10</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>VSR</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/vsr/nokdoc__VSR__15.1.html" role="button" class="btn btn-default">15.1</a>
-            <a href="docs/vsr/nokdoc__VSR__15.0.html" role="button" class="btn btn-default">15.0</a>
-            <a href="docs/vsr/nokdoc__VSR__14.0.html" role="button" class="btn btn-default">14.0</a>
-            <a href="docs/vsr/nokdoc__VSR.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/vsr/nokdoc__VSR__13.0.html">13.0</a></li>
-                <li><a href="docs/vsr/nokdoc__VSR__12.0.html">12.0</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>7850 VSG</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <!-- <a href="docs/210wbx_7850/nokdoc__210WBX.html" role="button" class="btn btn-default">210 WBX</a> -->
-            <a href="docs/210wbx_7850/nokdoc__7850VSG.html" role="button" class="btn btn-default">7850 VSG</a>
-            <a href="docs/210wbx_7850/nokdoc__7850-8VSG.html" role="button" class="btn btn-default">7850-8 VSG</a>
-            <a href="docs/210wbx_7850/nokdoc__7850VSA.html" role="button" class="btn btn-default">7850 VSA</a>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>7950 XRS</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/7950xrs/nokdoc__7950XRS__15.1.html" role="button" class="btn btn-default">15.1</a>
+          <a href="docs/7950xrs/nokdoc__7950XRS__15.0.html" role="button" class="btn btn-default">15</a>
+          <a href="docs/7950xrs/nokdoc__7950XRS__14.0.html" role="button" class="btn btn-default">14</a>
+          <a href="docs/7950xrs/nokdoc__7950XRS.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/7950xrs/nokdoc__7950XRS__13.0.html">13</a>
+              </li>
+              <li>
+                <a href="docs/7950xrs/nokdoc__7950XRS__12.0.html">12</a>
+              </li>
+              <li>
+                <a href="docs/7950xrs/nokdoc__7950XRS__11.0.html">11</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h2>7950 XRS</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/7950xrs/nokdoc__7950XRS__15.1.html" role="button" class="btn btn-default">15.1</a>
-            <a href="docs/7950xrs/nokdoc__7950XRS__15.0.html" role="button" class="btn btn-default">15</a>
-            <a href="docs/7950xrs/nokdoc__7950XRS__14.0.html" role="button" class="btn btn-default">14</a>
-            <a href="docs/7950xrs/nokdoc__7950XRS.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/7950xrs/nokdoc__7950XRS__13.0.html">13</a></li>
-                <li><a href="docs/7950xrs/nokdoc__7950XRS__12.0.html">12</a></li>
-                <li><a href="docs/7950xrs/nokdoc__7950XRS__11.0.html">11</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>7750 SR</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/7750sr/nokdoc__7750SR__15.1.html" role="button" class="btn btn-default">15.1</a>
-            <a href="docs/7750sr/nokdoc__7750SR__15.0.html" role="button" class="btn btn-default">15</a>
-            <a href="docs/7750sr/nokdoc__7750SR__14.0.html" role="button" class="btn btn-default">14</a>
-            <a href="docs/7750sr/nokdoc__7750SR" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/7750sr/nokdoc__7750SR__13.0.html">13</a></li>
-                <li><a href="docs/7750sr/nokdoc__7750SR__MG9.0.html">MG 9.0</a></li>
-                <li><a href="docs/7750sr/nokdoc__7750SR__12.0.html">12</a></li>
-                <li><a href="docs/7750sr/nokdoc__7750SR__11.0.html">11</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>7450 ESS</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/7450ess/nokdoc__7450ESS__15.1.html" role="button" class="btn btn-default">15.1</a>
-            <a href="docs/7450ess/nokdoc__7450ESS__15.0.html" role="button" class="btn btn-default">15</a>
-            <a href="docs/7450ess/nokdoc__7450ESS__14.0.html" role="button" class="btn btn-default">14</a>
-            <a href="docs/7450ess/nokdoc__7450ESS.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/7450ess/nokdoc__7450ESS__13.0.html">13</a></li>
-                <li><a href="docs/7450ess/nokdoc__7450ESS__12.0.html">12</a></li>
-                <li><a href="docs/7450ess/nokdoc__7450ESS__11.0.html">11</a></li>
-              </ul>
-            </div>
+      <div class="col-md-4">
+        <h2>7750 SR</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/7750sr/nokdoc__7750SR__15.1.html" role="button" class="btn btn-default">15.1</a>
+          <a href="docs/7750sr/nokdoc__7750SR__15.0.html" role="button" class="btn btn-default">15</a>
+          <a href="docs/7750sr/nokdoc__7750SR__14.0.html" role="button" class="btn btn-default">14</a>
+          <a href="docs/7750sr/nokdoc__7750SR" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/7750sr/nokdoc__7750SR__13.0.html">13</a>
+              </li>
+              <li>
+                <a href="docs/7750sr/nokdoc__7750SR__MG9.0.html">MG 9.0</a>
+              </li>
+              <li>
+                <a href="docs/7750sr/nokdoc__7750SR__12.0.html">12</a>
+              </li>
+              <li>
+                <a href="docs/7750sr/nokdoc__7750SR__11.0.html">11</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h2>7210 SAS</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/7210sas/nokdoc__7210SAS__9.0R10.html" role="button" class="btn btn-default">9.0 R10</a>
-            <a href="docs/7210sas/nokdoc__7210SAS__9.0R9.html" role="button" class="btn btn-default">9.0 R9</a>
-            <a href="docs/7210sas/nokdoc__7210SAS__9.0R4.html" role="button" class="btn btn-default">9.0 R4</a>
-            <a href="docs/7210sas/nokdoc__7210SAS.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R8.html">9.0 R8</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R7.html">9.0 R7</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R6.html">9.0 R6</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R5.html">9.0 R5</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R3.html">9.0 R3</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R2.html">9.0 R2</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__9.0R1.html">9.0 R1</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__8.0R13.html">8.0 R13</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__8.0R11.html">8.0 R11</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__8.0R10.html">8.0 R10</a></li>
-                <li><a href="docs/7210sas/nokdoc__7210SAS__8.0R9.html">8.0 R9</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>7705 SAR</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/7705sar/nokdoc__7705SAR__SAR-HM_15.0.html" role="button" class="btn btn-default">Hm 15.0</a>
-            <a href="docs/7705sar/nokdoc__7705SAR__8.0.html" role="button" class="btn btn-default">8.0</a>
-            <a href="docs/7705sar/nokdoc__7705SAR__7.0.html" role="button" class="btn btn-default">7.0</a>
-            <a href="docs/7705sar/nokdoc__7705SAR.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/7705sar/nokdoc__7705SAR__6.2.html">6.2</a></li>
-                <li><a href="docs/7705sar/nokdoc__7705SAR__6.1.html">6.1</a></li>
-              </ul>
-            </div>
+      <div class="col-md-4">
+        <h2>7450 ESS</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/7450ess/nokdoc__7450ESS__15.1.html" role="button" class="btn btn-default">15.1</a>
+          <a href="docs/7450ess/nokdoc__7450ESS__15.0.html" role="button" class="btn btn-default">15</a>
+          <a href="docs/7450ess/nokdoc__7450ESS__14.0.html" role="button" class="btn btn-default">14</a>
+          <a href="docs/7450ess/nokdoc__7450ESS.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/7450ess/nokdoc__7450ESS__13.0.html">13</a>
+              </li>
+              <li>
+                <a href="docs/7450ess/nokdoc__7450ESS__12.0.html">12</a>
+              </li>
+              <li>
+                <a href="docs/7450ess/nokdoc__7450ESS__11.0.html">11</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h2>NSP</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/nsp/nokdoc__NSP__17.12.html" role="button" class="btn btn-default">17.12</a>
-            <a href="docs/nsp/nokdoc__NSP__17.9.html" role="button" class="btn btn-default">17.9</a>
-            <a href="docs/nsp/nokdoc__NSP__17.6.html" role="button" class="btn btn-default">17.6</a>
-            <a href="docs/nsp/nokdoc__NSP.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/nsp/nokdoc__NSP__17.5.html">17.5</a></li>
-                <li><a href="docs/nsp/nokdoc__NSP__17.3.html">17.3</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>5620 SAM</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/5620sam/nokdoc__5620SAM__14.0_R9.html" role="button" class="btn btn-default">14.0 R9</a>
-            <a href="docs/5620sam/nokdoc__5620SAM__14.0_R8.html" role="button" class="btn btn-default">14.0 R8</a>
-            <a href="docs/5620sam/nokdoc__5620SAM__14.0_R7.html" role="button" class="btn btn-default">14.0 R7</a>
-            <a href="docs/5620sam/nokdoc__5620SAM.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/5620sam/nokdoc__5620SAM__14.0_R6.html">14.0 R6</a></li>
-                <li><a href="docs/5620sam/nokdoc__5620SAM__14.0_R5.html">14.0 R5</a></li>
-                <li><a href="docs/5620sam/nokdoc__5620SAM__14.0_R3.html">14.0 R3</a></li>
-                <li><a href="docs/5620sam/nokdoc__5620SAM__13.0_R8.html">13.0 R8</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2>1350 OMS</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/1350oms/nokdoc__1350OMS__14.2.html" role="button" class="btn btn-default">14.2</a>
-            <a href="docs/1350oms/nokdoc__1350OMS__14.1.html" role="button" class="btn btn-default">14.1</a>
-            <a href="docs/1350oms/nokdoc__1350OMS__14.0.html" role="button" class="btn btn-default">14.0</a>
-            <a href="docs/1350oms/nokdoc__1350OMS.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="docs/1350oms/nokdoc__1350OMS__13.4.html">13.4</a></li>
-              </ul>
-            </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>7210 IXR</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/7210ixr/nokdoc__7210IXR__13.1.html" role="button" class="btn btn-default">13.1</a>
+          <a href="docs/7210ixr/nokdoc__7210IXR.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h2>CMG</h2>
-          <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
-            <a href="docs/cmg/nokdoc__CMG__9.0.html" role="button" class="btn btn-default">9.0</a>
-            <a href="docs/cmg/nokdoc__CMG__8.0.html" role="button" class="btn btn-default">8.0</a>
-            <a href="docs/cmg/nokdoc__CMG__7.0.html" role="button" class="btn btn-default">7.0</a>
-            <a href="docs/cmg/nokdoc__CMG.html" role="button" class="btn btn-default">All</a>
-            <div class="btn-group" role="group">
-              <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Older
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <!-- <li><a href="docs/5620sam/nokdoc__5620SAM__14.0_R5.html">14.0 R5</a></li>
+      <div class="col-md-4">
+        <h2>7210 SAS</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/7210sas/nokdoc__7210SAS__9.0R10.html" role="button" class="btn btn-default">9.0 R10</a>
+          <a href="docs/7210sas/nokdoc__7210SAS__9.0R9.html" role="button" class="btn btn-default">9.0 R9</a>
+          <a href="docs/7210sas/nokdoc__7210SAS__9.0R4.html" role="button" class="btn btn-default">9.0 R4</a>
+          <a href="docs/7210sas/nokdoc__7210SAS.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R8.html">9.0 R8</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R7.html">9.0 R7</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R6.html">9.0 R6</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R5.html">9.0 R5</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R3.html">9.0 R3</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R2.html">9.0 R2</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__9.0R1.html">9.0 R1</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__8.0R13.html">8.0 R13</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__8.0R11.html">8.0 R11</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__8.0R10.html">8.0 R10</a>
+              </li>
+              <li>
+                <a href="docs/7210sas/nokdoc__7210SAS__8.0R9.html">8.0 R9</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>7705 SAR</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/7705sar/nokdoc__7705SAR__SAR-HM_15.0.html" role="button" class="btn btn-default">Hm 15.0</a>
+          <a href="docs/7705sar/nokdoc__7705SAR__8.0.html" role="button" class="btn btn-default">8.0</a>
+          <a href="docs/7705sar/nokdoc__7705SAR__7.0.html" role="button" class="btn btn-default">7.0</a>
+          <a href="docs/7705sar/nokdoc__7705SAR.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/7705sar/nokdoc__7705SAR__6.2.html">6.2</a>
+              </li>
+              <li>
+                <a href="docs/7705sar/nokdoc__7705SAR__6.1.html">6.1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>NSP</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/nsp/nokdoc__NSP__17.12.html" role="button" class="btn btn-default">17.12</a>
+          <a href="docs/nsp/nokdoc__NSP__17.9.html" role="button" class="btn btn-default">17.9</a>
+          <a href="docs/nsp/nokdoc__NSP__17.6.html" role="button" class="btn btn-default">17.6</a>
+          <a href="docs/nsp/nokdoc__NSP.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/nsp/nokdoc__NSP__17.5.html">17.5</a>
+              </li>
+              <li>
+                <a href="docs/nsp/nokdoc__NSP__17.3.html">17.3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>5620 SAM</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/5620sam/nokdoc__5620SAM__14.0_R9.html" role="button" class="btn btn-default">14.0 R9</a>
+          <a href="docs/5620sam/nokdoc__5620SAM__14.0_R8.html" role="button" class="btn btn-default">14.0 R8</a>
+          <a href="docs/5620sam/nokdoc__5620SAM__14.0_R7.html" role="button" class="btn btn-default">14.0 R7</a>
+          <a href="docs/5620sam/nokdoc__5620SAM.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/5620sam/nokdoc__5620SAM__14.0_R6.html">14.0 R6</a>
+              </li>
+              <li>
+                <a href="docs/5620sam/nokdoc__5620SAM__14.0_R5.html">14.0 R5</a>
+              </li>
+              <li>
+                <a href="docs/5620sam/nokdoc__5620SAM__14.0_R3.html">14.0 R3</a>
+              </li>
+              <li>
+                <a href="docs/5620sam/nokdoc__5620SAM__13.0_R8.html">13.0 R8</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>1350 OMS</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/1350oms/nokdoc__1350OMS__14.2.html" role="button" class="btn btn-default">14.2</a>
+          <a href="docs/1350oms/nokdoc__1350OMS__14.1.html" role="button" class="btn btn-default">14.1</a>
+          <a href="docs/1350oms/nokdoc__1350OMS__14.0.html" role="button" class="btn btn-default">14.0</a>
+          <a href="docs/1350oms/nokdoc__1350OMS.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="docs/1350oms/nokdoc__1350OMS__13.4.html">13.4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>CMG</h2>
+        <div class="btn-group btn-group-justified" role="group" aria-label="Available releases">
+          <a href="docs/cmg/nokdoc__CMG__9.0.html" role="button" class="btn btn-default">9.0</a>
+          <a href="docs/cmg/nokdoc__CMG__8.0.html" role="button" class="btn btn-default">8.0</a>
+          <a href="docs/cmg/nokdoc__CMG__7.0.html" role="button" class="btn btn-default">7.0</a>
+          <a href="docs/cmg/nokdoc__CMG.html" role="button" class="btn btn-default">All</a>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Older
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="docs/5620sam/nokdoc__5620SAM__14.0_R5.html">14.0 R5</a></li>
                 <li><a href="docs/5620sam/nokdoc__5620SAM__14.0_R3.html">14.0 R3</a></li>
                 <li><a href="docs/5620sam/nokdoc__5620SAM__13.0_R8.html">13.0 R8</a></li> -->
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
       </div>
-      <hr>
+    </div>
+    <hr>
 
-      <footer>
-        <p>&copy; 2017 <a href="https://netdevops.me/2017/initial-commit/">Roman Dodin</a></p>
-      </footer>
-    </div> <!-- /container -->
+    <footer>
+      <p>&copy; 2017
+        <a href="https://netdevops.me/2017/initial-commit/">Roman Dodin</a>
+      </p>
+    </footer>
+  </div>
+  <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>
