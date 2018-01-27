@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="NokDoc">
+    <meta name="author" content="Roman Dodin">
+    <link rel="shortcut icon" href="http://cdn.rawgit.com/hellt/nokdoc/82132b04b6ff4e5281e73787a4014231c67dbdf6/template/favicon.ico">
+
+    <title>NokDoc</title>
+
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
+
+    <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        td .glyphicon {
+            font-size: 10px;
+            top: 0px
+        }
+
+        body {
+            font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
+    </style>
+    
+    <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+            <li role="presentation"><a href="http://noshut.ru/2017/01/nokdoc/">About NokDoc</a></li>
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted"><a href="https://nokdoc.github.io/">NokDoc</a></h3>
+      </div>
+      <div class="row">
+          <!-- <div class="page-header">
+            <h3>Documentation</h3>
+          </div> -->
+          <div class="col-md-12">
+              <h3>Documentation set for
+                  <code>7210SAS</code>
+                  release <code>10.0</code>
+                  <small>generated on 2018/01/27</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
+          <div class="col-md-12">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Doc. ID</th>
+                    <th>Issue / Date</th>
+                    <th>Links</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>7210 SAS Software Release Notes 10.0R1</td>
+                    <td>3HE140660001TQZZA </td>
+                    <td>1 / Jan 10, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE140660001TQZZA_V1_7210 SAS Software Release Notes 10.0R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>7210 SAS-D, E Quality of Service Guide R10.0.R1</td>
+                    <td>3HE 13783 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13783AAAATQZZA01_V1_7210 SAS-D E Quality of Service Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>7210 SAS-D, E Routing Protocols Guide R10.0.R1</td>
+                    <td>3HE 13789 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13789AAAATQZZA01_V1_7210 SAS-D E Routing Protocols Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>7210 SAS-D, E, K 2F2T1C, K 2F4T6C Basic System Configuration Guide R10.0.R1</td>
+                    <td>3HE 13775 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13775AAAATQZZA01_V1_7210 SAS-D E K 2F2T1C K 2F4T6C Basic System Configuration Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>7210 SAS-D, E, K 2F2T1C, K 2F4T6C Interface Configuration Guide R10.0.R1</td>
+                    <td>3HE 13777 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13777AAAATQZZA01_V1_7210 SAS-D E K 2F2T1C K 2F4T6C Interface Configuration Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>7210 SAS-D, E, K 2F2T1C, K 2F4T6C OAM and Diagnostics Guide R10.0.R1</td>
+                    <td>3HE 13781 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13781AAAATQZZA01_V1_7210 SAS-D E K 2F2T1C K 2F4T6C OAM and Diagnostics Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>7210 SAS-D, E, K 2F2T1C, K 2F4T6C Router Configuration Guide R10.0.R1</td>
+                    <td>3HE 13787 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13787AAAATQZZA01_V1_7210 SAS-D E K 2F2T1C K 2F4T6C Router Configuration Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>7210 SAS-D, E, K 2F2T1C, K 2F4T6C Services Guide R10.0.R1</td>
+                    <td>3HE 13792 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13792AAAATQZZA01_V1_7210 SAS-D E K 2F2T1C K 2F4T6C Services Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>7210 SAS-D, E, K 2F2T1C, K 2F4T6C System Management Guide R10.0.R1</td>
+                    <td>3HE 13795 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13795AAAATQZZA01_V1_7210 SAS-D E K 2F2T1C K 2F4T6C System Management Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>7210 SAS-K 2F2T1C, K 2F4T6C Quality of Service Guide R10.0.R1</td>
+                    <td>3HE 13784 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13784AAAATQZZA01_V1_7210 SAS-K 2F2T1C K 2F4T6C Quality of Service Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>7210 SAS-K 2F4T6C MPLS Guide R10.0.R1</td>
+                    <td>3HE 13780 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13780AAAATQZZA01_V1_7210 SAS-K 2F4T6C MPLS Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>7210 SAS-K 2F4T6C Routing Protocols Guide R10.0.R1</td>
+                    <td>3HE 13790 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13790AAAATQZZA01_V1_7210 SAS-K 2F4T6C Routing Protocols Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>7210 SAS-M, T, Mxp, Sx, S Quality of Service Guide R10.0.R1</td>
+                    <td>3HE 13785 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13785AAAATQZZA01_V1_7210 SAS-M T Mxp Sx S Quality of Service Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>7210 SAS-M, T, Mxp, Sx, S Services Guide R10.0.R1</td>
+                    <td>3HE 13793 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13793AAAATQZZA01_V1_7210 SAS-M T Mxp Sx S Services Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S Basic System Configuration Guide R10.0.R1</td>
+                    <td>3HE 13776 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13776AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S Basic System Configuration Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S Interface Configuration Guide R10.0.R1</td>
+                    <td>3HE 13778 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13778AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S Interface Configuration Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S MPLS Guide R10.0.R1</td>
+                    <td>3HE 13779 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13779AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S MPLS Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S OAM and Diagnostics Guide R10.0.R1</td>
+                    <td>3HE 13782 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13782AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S OAM and Diagnostics Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S Router Configuration Guide R10.0.R1</td>
+                    <td>3HE 13788 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13788AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S Router Configuration Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S Routing Protocols Guide R10.0.R1</td>
+                    <td>3HE 13791 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13791AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S Routing Protocols Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>7210 SAS-M, T, X, R6, R12, Mxp, Sx, S System Management Guide R10.0.R1</td>
+                    <td>3HE 13796 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13796AAAATQZZA01_V1_7210 SAS-M T X R6 R12 Mxp Sx S System Management Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>7210 SAS-X, R6, R12 Quality of Service Guide R10.0.R1</td>
+                    <td>3HE 13786 AAAB TQZZA 01 </td>
+                    <td>1 / Jan 25, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13786AAABTQZZA01_V1_7210 SAS-X R6 R12 Quality of Service Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>7210 SAS-X, R6, R12 Services Guide R10.0.R1</td>
+                    <td>3HE 13794 AAAA TQZZA 01 </td>
+                    <td>1 / Jan 15, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE13794AAAATQZZA01_V1_7210 SAS-X R6 R12 Services Guide R10.0.R1.pdf">PDF </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+      </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="https://www.linkedin.com/in/rdodin">Roman Dodin</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>
