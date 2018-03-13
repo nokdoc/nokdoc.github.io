@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="NokDoc">
+    <meta name="author" content="Roman Dodin">
+    <link rel="shortcut icon" href="http://cdn.rawgit.com/hellt/nokdoc/82132b04b6ff4e5281e73787a4014231c67dbdf6/template/favicon.ico">
+
+    <title>NokDoc</title>
+
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
+
+    <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        td .glyphicon {
+            font-size: 10px;
+            top: 0px
+        }
+
+        body {
+            font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
+    </style>
+    
+    <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+            <li role="presentation"><a href="http://noshut.ru/2017/01/nokdoc/">About NokDoc</a></li>
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted"><a href="https://nokdoc.github.io/">NokDoc</a></h3>
+      </div>
+      <div class="row">
+          <!-- <div class="page-header">
+            <h3>Documentation</h3>
+          </div> -->
+          <div class="col-md-12">
+              <h3>Documentation set for
+                  <code>CBIS</code>
+                  release <code>17.5 SP1 GA</code>
+                  <small>generated on 2018/03/13</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
+          <div class="col-md-12">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Doc. ID</th>
+                    <th>Issue / Date</th>
+                    <th>Links</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>CBIS Installation Manual Airframe OR Issue 1 - 0</td>
+                    <td>DN09259971 R17.5 SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN09259971R17.5SP1GA_V1_CBIS Installation Manual Airframe OR Issue 1 - 0.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>CBIS Installation Manual for AirFrame HD_R17.5SP1_GA_Issue 5-0_20180306</td>
+                    <td>3MM-00186-ACAA-RJZT-A <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>5 / Mar 12, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3MM00186ACAARJZTA_V1_CBIS Installation Manual for AirFrame HD_R17.5SP1_GA_Issue 5-0_20180306 .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>CBIS Installation Manual for Dell R730_R17.5SP1_GA_Issue 4-0_20180306</td>
+                    <td>3MM-00186-ACAA-RJZV-A <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>4 / Mar 12, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3MM00186ACAARJZVA_V1_CBIS Installation Manual for Dell R730_R17.5SP1_GA_Issue 4-0_20180306.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>CBIS Installation Manual for HP c7000_R17.5SP1_GA_Issue 4-0_20180306</td>
+                    <td>3MM-00186-ACAA-RJZX-A <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>4 / Mar 12, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3MM00186ACAARJZXA_V1_CBIS Installation Manual for HP c7000_R17.5SP1_GA_Issue 4-0_20180306.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>CBIS Manager UI R17.5 SP1 GA Issue 1-0</td>
+                    <td>DN09259917 17.5SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN0925991717.5SP1GA_V1_CBIS Manager UI R17.5 SP1 GA Issue 1-0.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>CBIS Operations Manual R17.5 SP1 GA</td>
+                    <td>DN09259995 R17.5 SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2-0 / Dec 24, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN09259995R17.5SP1GA_V1_CBIS Operations Manual R17.5 SP1 GA.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>CBIS Product Description R17.5 SP1 GA issue 1 - 0</td>
+                    <td>DN09259905 17.5 SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Oct 2, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN0925990517.5SP1GA_V1_CBIS Product Description R17.5 SP1 GA issue 1 - 0.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>CBIS Product Description R17.5 SP1 GA Issue 2 - 0</td>
+                    <td>DN09259905 R17.5 SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 3, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN09259905R17.5SP1GA_V1_CBIS Product Description R17.5 SP1 GA Issue 2 - 0.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>CBIS Release Notes_R17.5SP1_GA_Issue 2 - 0</td>
+                    <td>DN09260007 R17.5 SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 3, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN09260007R17.5SP1GA_V1_CBIS Release Notes_R17.5SP1_GA_Issue 2 - 0.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>CBIS_Installation_Manual_for_Airframe_OR_R17.5_SP1_GA_Issue 2 - 0</td>
+                    <td>DN09259971 17.5 SP1 GA <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>2 / Oct 4, 2017</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/DN0925997117.5SP1GA_V1_CBIS_Installation_Manual_for_Airframe_OR_R17.5_SP1_GA_Issue 2 - 0.pdf">PDF </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+      </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="https://www.linkedin.com/in/rdodin">Roman Dodin</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>
