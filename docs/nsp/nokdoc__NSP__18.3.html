@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="NokDoc">
+    <meta name="author" content="Roman Dodin">
+    <link rel="shortcut icon" href="http://cdn.rawgit.com/hellt/nokdoc/82132b04b6ff4e5281e73787a4014231c67dbdf6/template/favicon.ico">
+
+    <title>NokDoc</title>
+
+    <!-- JQuery and plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Filtering and highlighting of search results https://jsfiddle.net/julmot/bs69vcqL/ -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.0/dist/jquery.mark.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link href="https://rawgit.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0/raw/0c95004aab0b7158fb8d0485439fa2ec11b049a1/jumbotron-narrow.css" rel="stylesheet" type="text/css" />
+
+    <!-- extra css for nokdoc.github.io only. Will contain extra css rules if needed -->
+    <link href="https://nokdoc.github.io/static/css/docset1.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        td .glyphicon {
+            font-size: 10px;
+            top: 0px
+        }
+
+        body {
+            font-family: "Nokia Pure Text","Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+
+        mark {
+          background: rgb(155, 212, 250);
+          color: inherit;
+          padding: 0;
+        }
+    </style>
+    
+    <!-- common scripts (like google analytics) applicable to nokdoc.github.io dir structure -->
+    <script src="https://nokdoc.github.io/static/scripts/nokdoc_common.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+            <li role="presentation"><a href="http://noshut.ru/2017/01/nokdoc/">About NokDoc</a></li>
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted"><a href="https://nokdoc.github.io/">NokDoc</a></h3>
+      </div>
+      <div class="row">
+          <!-- <div class="page-header">
+            <h3>Documentation</h3>
+          </div> -->
+          <div class="col-md-12">
+              <h3>Documentation set for
+                  <code>NSP</code>
+                  release <code>18.3</code>
+                  <small>generated on 2018/03/30</small>
+              </h3>
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="Search term... Type in and press [ENTER]">
+          </div>
+          <div class="col-md-12">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Doc. ID</th>
+                    <th>Issue / Date</th>
+                    <th>Links</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>NSP 18.3 Applications Guide</td>
+                    <td>3HE 14101 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14101AAAATQZZA01_V1_NSP 18.3 Applications Guide .pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>NSP 18.3 Installer Reference</td>
+                    <td>3HE 14102 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14102AAAATQZZA01_V1_NSP 18.3 Installer Reference.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>NSP 18.3 Release Notice</td>
+                    <td>3HE 14103 0001 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE141030001TQZZA01_V1_NSP 18.3 Release Notice.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>NSP NFM-P 18.3 Alarm Search Tool</td>
+                    <td>3HE 14069 AAAA TQZZA 01 </td>
+                    <td>2 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14069AAAATQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/archive/doc-Issue2.863497.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>NSP NFM-P 18.3 Analytics Report Catalog</td>
+                    <td>3HE 14067 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14067AAAATQZZA01_V1_NSP NFM-P 18.3 Analytics Report Catalog.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14067AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>NSP NFM-P 18.3 CPAM User Guide</td>
+                    <td>3HE 14070 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14070AAAATQZZA01_V1_NSP NFM-P 18.3 CPAM User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14070AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>NSP NFM-P 18.3 Documentation Map</td>
+                    <td>3HE 14071 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14071AAAATQZZA01_V1_NSP NFM-P 18.3 Documentation Map.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14071AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>NSP NFM-P 18.3 Glossary</td>
+                    <td>3HE 14073 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14073AAAATQZZA01_V1_NSP NFM-P 18.3 Glossary.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14073AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>NSP NFM-P 18.3 Infocenter</td>
+                    <td>NFMP18R3A </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/NFMP18R3A/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>NSP NFM-P 18.3 Infocenter - Restricted content</td>
+                    <td>NFMP18R3 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/NFMP18R3/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>NSP NFM-P 18.3 Installation and Upgrade Guide</td>
+                    <td>3HE 14075 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14075AAAATQZZA01_V1_NSP NFM-P 18.3 Installation and Upgrade Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14075AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>NSP NFM-P 18.3 Integration Guide</td>
+                    <td>3HE 14074 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14074AAAATQZZA01_V1_NSP NFM-P 18.3 Integration Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14074AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>NSP NFM-P 18.3 LTE EPC User Guide</td>
+                    <td>3HE 14076 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14076AAAATQZZA01_V1_NSP NFM-P 18.3 LTE EPC User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14076AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>NSP NFM-P 18.3 LTE RAN User Guide</td>
+                    <td>3HE 14077 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14077AAAATQZZA01_V1_NSP NFM-P 18.3 LTE RAN User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14077AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>NSP NFM-P 18.3 Microwave Radio User Guide</td>
+                    <td>3HE 14078 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14078AAAATQZZA01_V1_NSP NFM-P 18.3 Microwave Radio User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14078AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>NSP NFM-P 18.3 MultiRadio BTS User Guide</td>
+                    <td>3HE 14079 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14079AAAATQZZA01_V1_NSP NFM-P 18.3 MultiRadio BTS User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14079AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>NSP NFM-P 18.3 NFV Solutions Guide</td>
+                    <td>3HE 14080 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14080AAAATQZZA01_V1_NSP NFM-P 18.3 NFV Solutions Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14080AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>NSP NFM-P 18.3 Optical Integration Module User Guide</td>
+                    <td>3HE 14081 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14081AAAATQZZA01_V1_NSP NFM-P 18.3 Optical Integration Module User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14081AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>NSP NFM-P 18.3 Optical Parameter Reference</td>
+                    <td>3HE 14082 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14082AAAATQZZA01_V1_NSP NFM-P 18.3 Optical Parameter Reference.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14082AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>NSP NFM-P 18.3 Optical User Guide</td>
+                    <td>3HE 14083 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14083AAAATQZZA01_V1_NSP NFM-P 18.3 Optical User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14083AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>NSP NFM-P 18.3 Planning Guide</td>
+                    <td>3HE 14085 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14085AAAATQZZA01_V1_NSP NFM-P 18.3 Planning Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14085AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>NSP NFM-P 18.3 Release Description</td>
+                    <td>3HE 14086 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14086AAAATQZZA01_V1_NSP NFM-P 18.3 Release Description.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14086AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>NSP NFM-P 18.3 Release Notice</td>
+                    <td>3HE 14099 0001 TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE140990001TQZZA01_V1_NSP NFM-P 18.3 Release Notice.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>NSP NFM-P 18.3 Scripts and Templates Developer Guide</td>
+                    <td>3HE 14087 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14087AAAATQZZA01_V1_NSP NFM-P 18.3 Scripts and Templates Developer Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14087AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>NSP NFM-P 18.3 Statistics Management Guide</td>
+                    <td>3HE 14088 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14088AAAATQZZA01_V1_NSP NFM-P 18.3 Statistics Management Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14088AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>NSP NFM-P 18.3 Statistics Search Tool</td>
+                    <td>3HE 14089 AAAA TQZZA 01 </td>
+                    <td>2 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14089AAAATQZZA01/index.html">HTML </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/archive/doc-Issue2.863498.zip">ZIP </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>NSP NFM-P 18.3 System Administrator Guide</td>
+                    <td>3HE 14090 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14090AAAATQZZA01_V1_NSP NFM-P 18.3 System Administrator Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14090AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>NSP NFM-P 18.3 System Architecture Guide</td>
+                    <td>3HE 14091 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14091AAAATQZZA01_V1_NSP NFM-P 18.3 System Architecture Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14091AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>NSP NFM-P 18.3 Troubleshooting Guide</td>
+                    <td>3HE 14092 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14092AAAATQZZA01_V1_NSP NFM-P 18.3 Troubleshooting Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14092AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>NSP NFM-P 18.3 User Guide</td>
+                    <td>3HE 14093 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14093AAAATQZZA01_V1_NSP NFM-P 18.3 User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/html/3HE14093AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td>NSP NFM-P 18.3 Wireless OSS Interface Developer Guide</td>
+                    <td>3HE 14094 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14094AAAATQZZA01_V1_NSP NFM-P 18.3 Wireless OSS Interface Developer Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14094AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>32</td>
+                    <td>NSP NFM-P 18.3 Wireless Parameter Reference</td>
+                    <td>3HE 14095 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14095AAAATQZZA01_V1_NSP NFM-P 18.3 Wireless Parameter Reference.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14095AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>33</td>
+                    <td>NSP NFM-P 18.3 Wireless Release Description</td>
+                    <td>3HE 14096 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14096AAAATQZZA01_V1_NSP NFM-P 18.3 Wireless Release Description.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14096AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>34</td>
+                    <td>NSP NFM-P 18.3 XML API Developer Guide</td>
+                    <td>3HE 14097 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14097AAAATQZZA01_V1_NSP NFM-P 18.3 XML API Developer Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14097AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>35</td>
+                    <td>NSP NFM-P and 5620 SAM Network Element Compatibility Guide (5620 SAM Releases 12.0 and later)</td>
+                    <td>3HE 14189 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 29, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14189AAAATQZZA01_V1_NSP NFM-P and 5620 SAM Network Element Compatibility Guide (5620 SAM Releases 12.0 and later).pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td>NSP NSD and NRC Release 18.3 Installation and Upgrade Guide</td>
+                    <td>3HE 14125 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14125AAAATQZZA01_V1_NSP NSD and NRC Release 18.3 Installation and Upgrade Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>NSP NSD and NRC Release 18.3 Planning Guide</td>
+                    <td>3HE 14123 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14123AAAATQZZA01_V1_NSP NSD and NRC Release 18.3 Planning Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>NSP NSD and NRC Release 18.3 Release Description</td>
+                    <td>3HE 14124 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14124AAAATQZZA01_V1_NSP NSD and NRC Release 18.3 Release Description.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>39</td>
+                    <td>NSP NSD and NRC Release 18.3 Release Notice</td>
+                    <td>3HE 14126 0001 TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE141260001TQZZA01_V1_NSP NSD and NRC Release 18.3 Release Notice.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>40</td>
+                    <td>NSP NSD and NRC Release 18.3 User Guide</td>
+                    <td>3HE 14122 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14122AAAATQZZA01_V1_NSP NSD and NRC Release 18.3 User Guide.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>41</td>
+                    <td>NSP Release 18.3 Deployment Overview</td>
+                    <td>3HE 14100 AAAA TQZZA 01 </td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/cgi-bin/dbaccessfilename.cgi/3HE14100AAAATQZZA01_V1_NSP Release 18.3 Deployment Overview.pdf">PDF </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>42</td>
+                    <td>VSAP 18.3 User Guide</td>
+                    <td>3HE 14098 AAAA TQZZA 01 <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></td>
+                    <td>1 / Mar 28, 2018</td>
+                    <td>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/cgi-bin/dbaccessfilename.cgi/3HE14098AAAATQZZA01_V1_VSAP 18.3 User Guide.pdf">PDF </a>
+                    <a href="https://infoproducts.alcatel-lucent.com/aces/htdocs/3HE14098AAAATQZZA01/index.html">HTML </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+      </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="https://www.linkedin.com/in/rdodin">Roman Dodin</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>
